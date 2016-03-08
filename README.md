@@ -5,3 +5,10 @@ Assumes npm and bower are already installed globally. Execute the following comm
  `npm install`
  
  `bower install`
+ 
+# Run 
+ 
+ From root directory run: 
+ 
+  `npm start`
+  
