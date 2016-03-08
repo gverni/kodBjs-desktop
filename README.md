@@ -1,7 +1,7 @@
-Install 
+# Install 
 
-Assumes npm and bower are already installed glbally. 
+Assumes npm and bower are already installed globally. Execute the following commands:  
 
-npm install
-bower install 
-
+ `npm install`
+ 
+ `bower install`
