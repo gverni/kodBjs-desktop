@@ -1,0 +1,908 @@
+{
+	"id": "libMovies",
+	"jsonrpc": "2.0",
+	"result": {
+		"limits": {
+			"end": 75,
+			"start": 0,
+			"total": 217
+		},
+		"movies": [
+			{
+				"art": {
+					"fanart": "image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2fyFdi521sjDIaCDRU7WkWjmZNH9d.jpg/",
+					"poster": "image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2fx3jVnPRpoWHVW3orDWYUOPxno6F.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/45 years (2015)/45.years.2015.limited.bdrip.x264-amiable.mkv",
+				"label": "45 Years",
+				"movieid": 317,
+				"playcount": 0,
+				"rating": 5.3000001907348632812,
+				"thumbnail": "image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2fx3jVnPRpoWHVW3orDWYUOPxno6F.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2f47%20Ronin%20(2013)%2f47.Ronin.2013.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2f47%20Ronin%20(2013)%2f47.Ronin.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/47 Ronin (2013)/47.Ronin.2013.720p.BluRay.x264.YIFY.mp4",
+				"label": "47 Ronin",
+				"movieid": 4,
+				"playcount": 0,
+				"rating": 6.0999999046325683594,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2f47%20Ronin%20(2013)%2f47.Ronin.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fUna%20Storia%20Semplice%20(1991)%2fUna%20Storia%20Semplice-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Una Storia Semplice (1991)/Una Storia Semplice.avi",
+				"label": "A Simple Story",
+				"movieid": 269,
+				"playcount": 0,
+				"rating": 0.0,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fUna%20Storia%20Semplice%20(1991)%2fUna%20Storia%20Semplice-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fA%20Story%20of%20Children%20and%20Film%20(2013)%2fA.Story.of.Children.and.Film.2013.DVDrip.x264.AC3-KG-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fA%20Story%20of%20Children%20and%20Film%20(2013)%2fA.Story.of.Children.and.Film.2013.DVDrip.x264.AC3-KG-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/A Story of Children and Film (2013)/A.Story.of.Children.and.Film.2013.DVDrip.x264.AC3-KG.mkv",
+				"label": "A Story of Children and Film",
+				"movieid": 5,
+				"playcount": 0,
+				"rating": 0.0,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fA%20Story%20of%20Children%20and%20Film%20(2013)%2fA.Story.of.Children.and.Film.2013.DVDrip.x264.AC3-KG-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fAbout%20Time%20(2013)%2fAbout.Time.2013.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fAbout%20Time%20(2013)%2fAbout.Time.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/About Time (2013)/About.Time.2013.720p.BluRay.x264.YIFY.mp4",
+				"label": "About Time",
+				"movieid": 6,
+				"playcount": 0,
+				"rating": 7.6999998092651367188,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fAbout%20Time%20(2013)%2fAbout.Time.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fAll%20good%20things%2f%20All%20Good%20Things%202010%20DVDrip%201080pHD%20gaz74gaz-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fAll%20good%20things%2f%20All%20Good%20Things%202010%20DVDrip%201080pHD%20gaz74gaz-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/All good things/ All Good Things 2010 DVDrip 1080pHD gaz74gaz.avi",
+				"label": "All Good Things",
+				"movieid": 9,
+				"playcount": 0,
+				"rating": 5.9000000953674316406,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fAll%20good%20things%2f%20All%20Good%20Things%202010%20DVDrip%201080pHD%20gaz74gaz-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Short%20Films%20of%20David%20Lynch%20(2002)%2f2.%20The%20Alphabet%20(1968)-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Short%20Films%20of%20David%20Lynch%20(2002)%2f2.%20The%20Alphabet%20(1968)-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/The Short Films of David Lynch (2002)/2. The Alphabet (1968).mkv",
+				"label": "The Alphabet",
+				"movieid": 236,
+				"playcount": 0,
+				"rating": 4.5,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Short%20Films%20of%20David%20Lynch%20(2002)%2f2.%20The%20Alphabet%20(1968)-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Short%20Films%20of%20David%20Lynch%20(2002)%2f4.%20The%20Amputee%20(1974)-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Short%20Films%20of%20David%20Lynch%20(2002)%2f4.%20The%20Amputee%20(1974)-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/The Short Films of David Lynch (2002)/4. The Amputee (1974).mkv",
+				"label": "The Amputee",
+				"movieid": 238,
+				"playcount": 0,
+				"rating": 4.5999999046325683594,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Short%20Films%20of%20David%20Lynch%20(2002)%2f4.%20The%20Amputee%20(1974)-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fAnchorman%202%20The%20Legend%20Continues%20(2013)%2fAnchorman.2.The.Legend.Continues.2013.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fAnchorman%202%20The%20Legend%20Continues%20(2013)%2fAnchorman.2.The.Legend.Continues.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Anchorman 2 The Legend Continues (2013)/Anchorman.2.The.Legend.Continues.2013.720p.BluRay.x264.YIFY.mp4",
+				"label": "Anchorman 2: The Legend Continues",
+				"movieid": 10,
+				"playcount": 0,
+				"rating": 6.1999998092651367188,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fAnchorman%202%20The%20Legend%20Continues%20(2013)%2fAnchorman.2.The.Legend.Continues.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fAnita%20B%20(2014)%2fAnita%20B%202014-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Anita B (2014)/Anita B 2014.avi",
+				"label": "Anita B.",
+				"movieid": 11,
+				"playcount": 0,
+				"rating": 0.0,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fAnita%20B%20(2014)%2fAnita%20B%202014-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2fbWvLioeu9DUv4aP5kWPHj8NMoNJ.jpg/",
+					"poster": "image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2fn2qLb5UPj0sKUnlzkthp30wM0g2.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Attack the Block (2011)/Attack.the.Block.2011.720p.BrRip.x264.YIFY.mp4",
+				"label": "Attack the Block",
+				"movieid": 292,
+				"playcount": 0,
+				"rating": 6.1999998092651367188,
+				"thumbnail": "image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2fn2qLb5UPj0sKUnlzkthp30wM0g2.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fAugust%20Osage%20County%20(2013)%2fAugust.Osage.County.2013.BDRip.X264-SPARKS-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fAugust%20Osage%20County%20(2013)%2fAugust.Osage.County.2013.BDRip.X264-SPARKS-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/August Osage County (2013)/August.Osage.County.2013.BDRip.X264-SPARKS.mkv",
+				"label": "August: Osage County",
+				"movieid": 13,
+				"playcount": 0,
+				"rating": 7.0999999046325683594,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fAugust%20Osage%20County%20(2013)%2fAugust.Osage.County.2013.BDRip.X264-SPARKS-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Bank%20(2001)%2fThe%20Bank%20-%202001%20-%20DVDRip%20-%20En%20-%20IMDB-tt0241223-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Bank%20(2001)%2fThe%20Bank%20-%202001%20-%20DVDRip%20-%20En%20-%20IMDB-tt0241223-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/The Bank (2001)/The Bank - 2001 - DVDRip - En - IMDB-tt0241223.avi",
+				"label": "The Bank",
+				"movieid": 199,
+				"playcount": 0,
+				"rating": 6.0,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Bank%20(2001)%2fThe%20Bank%20-%202001%20-%20DVDRip%20-%20En%20-%20IMDB-tt0241223-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fBaraka.Food.Inc.Life.in.a.Day.In.the.Shadow.of.the.Moon.720p.x264.MIKY%2fBaraka.1992.720p.x264.MIKY%2fBaraka.1992.720p.x264.MIKY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fBaraka.Food.Inc.Life.in.a.Day.In.the.Shadow.of.the.Moon.720p.x264.MIKY%2fBaraka.1992.720p.x264.MIKY%2fBaraka.1992.720p.x264.MIKY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Baraka.Food.Inc.Life.in.a.Day.In.the.Shadow.of.the.Moon.720p.x264.MIKY/Baraka.1992.720p.x264.MIKY/Baraka.1992.720p.x264.MIKY.mp4",
+				"label": "Baraka",
+				"movieid": 14,
+				"playcount": 0,
+				"rating": 8.0,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fBaraka.Food.Inc.Life.in.a.Day.In.the.Shadow.of.the.Moon.720p.x264.MIKY%2fBaraka.1992.720p.x264.MIKY%2fBaraka.1992.720p.x264.MIKY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fBefore%20Midnight%20(2013)%2fBefore.Midnight.2013.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fBefore%20Midnight%20(2013)%2fBefore.Midnight.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Before Midnight (2013)/Before.Midnight.2013.720p.BluRay.x264.YIFY.mp4",
+				"label": "Before Midnight",
+				"movieid": 17,
+				"playcount": 0,
+				"rating": 7.0999999046325683594,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fBefore%20Midnight%20(2013)%2fBefore.Midnight.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fBefore%20the%20Devil%20Knows%20You%27re%20Dead%20(2007)%2fBefore.The.Devil.Knows.Youre.Dead.2007.LIMITED.720p.Bluray.x264.anoXmous-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fBefore%20the%20Devil%20Knows%20You%27re%20Dead%20(2007)%2fBefore.The.Devil.Knows.Youre.Dead.2007.LIMITED.720p.Bluray.x264.anoXmous-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Before the Devil Knows You're Dead (2007)/Before.The.Devil.Knows.Youre.Dead.2007.LIMITED.720p.Bluray.x264.anoXmous.mp4",
+				"label": "Before the Devil Knows You're Dead",
+				"movieid": 18,
+				"playcount": 0,
+				"rating": 6.8000001907348632812,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fBefore%20the%20Devil%20Knows%20You%27re%20Dead%20(2007)%2fBefore.The.Devil.Knows.Youre.Dead.2007.LIMITED.720p.Bluray.x264.anoXmous-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fBianca%20Come%20Il%20Latte%2c%20Rossa%20Come%20Il%20Sangue%20(2013)%2fBianca-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fBianca%20Come%20Il%20Latte%2c%20Rossa%20Come%20Il%20Sangue%20(2013)%2fBianca-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Bianca Come Il Latte, Rossa Come Il Sangue (2013)/Bianca.avi",
+				"label": "Bianca come il latte, rossa come il sangue",
+				"movieid": 22,
+				"playcount": 0,
+				"rating": 7.0,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fBianca%20Come%20Il%20Latte%2c%20Rossa%20Come%20Il%20Sangue%20(2013)%2fBianca-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2fvDEnGakDcoX0ydDtX35RE9wpXxM.jpg/",
+					"poster": "image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2fp11Ftd4VposrAzthkhF53ifYZRl.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/The.Big.Short.2015.720p.WEBRip.x264.AAC-ETRG/The.Big.Short.2015.720p.WEBRip.x264.AAC-ETRG.mp4",
+				"label": "The Big Short",
+				"movieid": 329,
+				"playcount": 0,
+				"rating": 7.3000001907348632812,
+				"thumbnail": "image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2fp11Ftd4VposrAzthkhF53ifYZRl.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Bling%20Ring%20(2013)%20%5b1080p%5d%2fThe.Bling.Ring.2013.1080p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Bling%20Ring%20(2013)%20%5b1080p%5d%2fThe.Bling.Ring.2013.1080p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/The Bling Ring (2013) [1080p]/The.Bling.Ring.2013.1080p.BluRay.x264.YIFY.mp4",
+				"label": "The Bling Ring",
+				"movieid": 201,
+				"playcount": 0,
+				"rating": 5.4000000953674316406,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Bling%20Ring%20(2013)%20%5b1080p%5d%2fThe.Bling.Ring.2013.1080p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2fs7tSZ98Hh3MT9mvecWGZ1nQrmK1.jpg/",
+					"poster": "image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2fmSZqFqQGPSYdURMksv6mUGOE8Mg.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Sangue del mio sangue (2015)/Sangue del mio sangue 2015.avi",
+				"label": "Blood of My Blood",
+				"movieid": 321,
+				"playcount": 0,
+				"rating": 7.5999999046325683594,
+				"thumbnail": "image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2fmSZqFqQGPSYdURMksv6mUGOE8Mg.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Book%20Thief%20(2013)%2fThe.Book.Thief.2013.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Book%20Thief%20(2013)%2fThe.Book.Thief.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/The Book Thief (2013)/The.Book.Thief.2013.720p.BluRay.x264.YIFY.mp4",
+				"label": "The Book Thief",
+				"movieid": 202,
+				"playcount": 0,
+				"rating": 7.5999999046325683594,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Book%20Thief%20(2013)%2fThe.Book.Thief.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2fbTgqCfMeBgmkcZr2Zw7xO8WlhzK.jpg/",
+					"poster": "image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2fkThUnHTnPq3n6RSI9QWKgrMJBKs.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Bridge of Spies (2015)/Bridge.of.Spies.2015.DVDScr.XVID.AC3.HQ.Hive-CM8.avi",
+				"label": "Bridge of Spies",
+				"movieid": 311,
+				"playcount": 0,
+				"rating": 6.8000001907348632812,
+				"thumbnail": "image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2fkThUnHTnPq3n6RSI9QWKgrMJBKs.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2f7fXKVIM8UQBvQ9aQOzFqThlq7eN.jpg/",
+					"poster": "image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2fyeA0eyNUmMlvXPkm9AHQfzxOwPy.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Brooklyn.2015.BRRip.XviD.AC3-EVO/Brooklyn.2015.BRRip.XviD.AC3-EVO.avi",
+				"label": "Brooklyn",
+				"movieid": 325,
+				"playcount": 0,
+				"rating": 6.9000000953674316406,
+				"thumbnail": "image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2fyeA0eyNUmMlvXPkm9AHQfzxOwPy.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Buddha%20(2010)%2fthe.buddha.2010.720p.bluray.x264-hd4u-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Buddha%20(2010)%2fthe.buddha.2010.720p.bluray.x264-hd4u-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/The Buddha (2010)/the.buddha.2010.720p.bluray.x264-hd4u.mkv",
+				"label": "The Buddha",
+				"movieid": 203,
+				"playcount": 0,
+				"rating": 6.0,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Buddha%20(2010)%2fthe.buddha.2010.720p.bluray.x264-hd4u-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Butler%20(2013)%2fThe.Butler.2013.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Butler%20(2013)%2fThe.Butler.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/The Butler (2013)/The.Butler.2013.720p.BluRay.x264.YIFY.mp4",
+				"label": "The Butler",
+				"movieid": 204,
+				"playcount": 0,
+				"rating": 7.1999998092651367188,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Butler%20(2013)%2fThe.Butler.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCaptain%20America%20The%20Winter%20Soldier%20(2014)%2fCaptain.America.The.Winter.Soldier.2014.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCaptain%20America%20The%20Winter%20Soldier%20(2014)%2fCaptain.America.The.Winter.Soldier.2014.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Captain America The Winter Soldier (2014)/Captain.America.The.Winter.Soldier.2014.720p.BluRay.x264.YIFY.mp4",
+				"label": "Captain America: The Winter Soldier",
+				"movieid": 25,
+				"playcount": 0,
+				"rating": 7.8000001907348632812,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCaptain%20America%20The%20Winter%20Soldier%20(2014)%2fCaptain.America.The.Winter.Soldier.2014.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCaptain%20Phillips%20(2013)%2fCaptain.Phillips.2013.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCaptain%20Phillips%20(2013)%2fCaptain.Phillips.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Captain Phillips (2013)/Captain.Phillips.2013.720p.BluRay.x264.YIFY.mp4",
+				"label": "Captain Phillips",
+				"movieid": 27,
+				"playcount": 0,
+				"rating": 7.9000000953674316406,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCaptain%20Phillips%20(2013)%2fCaptain.Phillips.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCarla%27s%20Song%2fCarla%27s%20Song%20(1994)-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCarla%27s%20Song%2fCarla%27s%20Song%20(1994)-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Carla's Song/Carla's Song (1994).avi",
+				"label": "Carla's Song",
+				"movieid": 28,
+				"playcount": 0,
+				"rating": 4.5,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCarla%27s%20Song%2fCarla%27s%20Song%20(1994)-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCha%20Cha%20Cha%20(2013)%2fCha%20Cha%20Cha%202013-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCha%20Cha%20Cha%20(2013)%2fCha%20Cha%20Cha%202013-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Cha Cha Cha (2013)/Cha Cha Cha 2013.avi",
+				"label": "Cha cha cha",
+				"movieid": 29,
+				"playcount": 0,
+				"rating": 0.0,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCha%20Cha%20Cha%20(2013)%2fCha%20Cha%20Cha%202013-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fChappie%20(2015)%2fChappie.2015.WEB-DL.x264-RARBG-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fChappie%20(2015)%2fChappie.2015.WEB-DL.x264-RARBG-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Chappie (2015)/Chappie.2015.WEB-DL.x264-RARBG.mp4",
+				"label": "Chappie",
+				"movieid": 30,
+				"playcount": 0,
+				"rating": 7.0,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fChappie%20(2015)%2fChappie.2015.WEB-DL.x264-RARBG-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fChasing%20Ice%20(2012)%2f7s-chasing-ice-720p-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fChasing%20Ice%20(2012)%2f7s-chasing-ice-720p-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Chasing Ice (2012)/7s-chasing-ice-720p.mkv",
+				"label": "Chasing Ice",
+				"movieid": 32,
+				"playcount": 0,
+				"rating": 8.3000001907348632812,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fChasing%20Ice%20(2012)%2f7s-chasing-ice-720p-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2fqHvQ6fxxD6T0qBSXWdJ9Zwup7ls.jpg/",
+					"poster": "image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2fw7CyvnRW2jOQNe9BX7aJ2iLL9xQ.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Chi-Raq (2015)/Chi-Raq.2015.720p.WEBRip.x264.AAC-ETRG.mp4",
+				"label": "Chi-Raq",
+				"movieid": 308,
+				"playcount": 0,
+				"rating": 6.0,
+				"thumbnail": "image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2fw7CyvnRW2jOQNe9BX7aJ2iLL9xQ.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCirque%20du%20Soleil%ef%80%a2%20Journey%20of%20Man%20(2000)%2fCirque.du.Soleil.Journey.of.Man.2000.BluRay.720p.DTS.x264-CHD-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCirque%20du%20Soleil%ef%80%a2%20Journey%20of%20Man%20(2000)%2fCirque.du.Soleil.Journey.of.Man.2000.BluRay.720p.DTS.x264-CHD-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Cirque du Soleilï€¢ Journey of Man (2000)/Cirque.du.Soleil.Journey.of.Man.2000.BluRay.720p.DTS.x264-CHD.mkv",
+				"label": "Cirque du Soleil: Journey of Man",
+				"movieid": 37,
+				"playcount": 0,
+				"rating": 6.6999998092651367188,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCirque%20du%20Soleil%ef%80%a2%20Journey%20of%20Man%20(2000)%2fCirque.du.Soleil.Journey.of.Man.2000.BluRay.720p.DTS.x264-CHD-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCirque%20du%20Soleil%20K%c3%80%20Extreme%20(2004)%2fCirque%20du%20Soleil%20-%20Ka-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCirque%20du%20Soleil%20K%c3%80%20Extreme%20(2004)%2fCirque%20du%20Soleil%20-%20Ka-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Cirque du Soleil KÃ€ Extreme (2004)/Cirque du Soleil - Ka.avi",
+				"label": "Cirque du Soleil: KÃ€ Extreme",
+				"movieid": 35,
+				"playcount": 0,
+				"rating": 0.0,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCirque%20du%20Soleil%20K%c3%80%20Extreme%20(2004)%2fCirque%20du%20Soleil%20-%20Ka-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCirque%20Du%20Soleil%20Worlds%20Away%20(2012)%20%5b1080p%5d%2fCirque.Du.Soleil.Worlds.Away.2012.1080p.BRrip.x264.GAZ.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCirque%20Du%20Soleil%20Worlds%20Away%20(2012)%20%5b1080p%5d%2fCirque.Du.Soleil.Worlds.Away.2012.1080p.BRrip.x264.GAZ.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Cirque Du Soleil Worlds Away (2012) [1080p]/Cirque.Du.Soleil.Worlds.Away.2012.1080p.BRrip.x264.GAZ.YIFY.mp4",
+				"label": "Cirque du Soleil: Worlds Away",
+				"movieid": 36,
+				"playcount": 0,
+				"rating": 6.1999998092651367188,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCirque%20Du%20Soleil%20Worlds%20Away%20(2012)%20%5b1080p%5d%2fCirque.Du.Soleil.Worlds.Away.2012.1080p.BRrip.x264.GAZ.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCitizen%20Kane%20(1941)%2fCitizen.Kane.1941.720p.BrRip.x264.BOKUTOX.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCitizen%20Kane%20(1941)%2fCitizen.Kane.1941.720p.BrRip.x264.BOKUTOX.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Citizen Kane (1941)/Citizen.Kane.1941.720p.BrRip.x264.BOKUTOX.YIFY.mp4",
+				"label": "Citizen Kane",
+				"movieid": 38,
+				"playcount": 0,
+				"rating": 7.4000000953674316406,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCitizen%20Kane%20(1941)%2fCitizen.Kane.1941.720p.BrRip.x264.BOKUTOX.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCity%20of%20God%20(2002)%2fCity.Of.God.2002.720p.Bluray.x264.anoXmous-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCity%20of%20God%20(2002)%2fCity.Of.God.2002.720p.Bluray.x264.anoXmous-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/City of God (2002)/City.Of.God.2002.720p.Bluray.x264.anoXmous.mp4",
+				"label": "City of God",
+				"movieid": 39,
+				"playcount": 0,
+				"rating": 7.6999998092651367188,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCity%20of%20God%20(2002)%2fCity.Of.God.2002.720p.Bluray.x264.anoXmous-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCloudy%20with%20a%20Chance%20of%20Meatballs%202%20(2013)%2fCloudy.with.a.Chance.of.Meatballs.2.2013.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCloudy%20with%20a%20Chance%20of%20Meatballs%202%20(2013)%2fCloudy.with.a.Chance.of.Meatballs.2.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Cloudy with a Chance of Meatballs 2 (2013)/Cloudy.with.a.Chance.of.Meatballs.2.2013.720p.BluRay.x264.YIFY.mp4",
+				"label": "Cloudy with a Chance of Meatballs 2",
+				"movieid": 41,
+				"playcount": 0,
+				"rating": 6.9000000953674316406,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCloudy%20with%20a%20Chance%20of%20Meatballs%202%20(2013)%2fCloudy.with.a.Chance.of.Meatballs.2.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCodebreaker%20(2011)%2fCodebreaker.2011.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCodebreaker%20(2011)%2fCodebreaker.2011.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Codebreaker (2011)/Codebreaker.2011.720p.BluRay.x264.YIFY.mp4",
+				"label": "Codebreaker",
+				"movieid": 42,
+				"playcount": 0,
+				"rating": 7.5,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCodebreaker%20(2011)%2fCodebreaker.2011.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCoherence%20(2013)%2fCoherence.2013.1080p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCoherence%20(2013)%2fCoherence.2013.1080p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Coherence (2013)/Coherence.2013.1080p.BluRay.x264.YIFY.mp4",
+				"label": "Coherence",
+				"movieid": 43,
+				"playcount": 0,
+				"rating": 7.0999999046325683594,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCoherence%20(2013)%2fCoherence.2013.1080p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCome%20il%20Vento%20(2013)%2fCome.il.vento.2013.BDrip%20720p.H264.Ita%20Dts%5bMTX%20Group%5dmutu_1980-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCome%20il%20Vento%20(2013)%2fCome.il.vento.2013.BDrip%20720p.H264.Ita%20Dts%5bMTX%20Group%5dmutu_1980-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Come il Vento (2013)/Come.il.vento.2013.BDrip 720p.H264.Ita Dts[MTX Group]mutu_1980.mkv",
+				"label": "Come il vento",
+				"movieid": 45,
+				"playcount": 0,
+				"rating": 0.0,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fCome%20il%20Vento%20(2013)%2fCome.il.vento.2013.BDrip%20720p.H264.Ita%20Dts%5bMTX%20Group%5dmutu_1980-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fConfusi%20e%20Felici%20(2014)%2fConfusi.E.Felici.2014.iTALiAN.AC3.BDRip.XviD-BG-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fConfusi%20e%20Felici%20(2014)%2fConfusi.E.Felici.2014.iTALiAN.AC3.BDRip.XviD-BG-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Confusi e Felici (2014)/Confusi.E.Felici.2014.iTALiAN.AC3.BDRip.XviD-BG.avi",
+				"label": "Confusi e felici",
+				"movieid": 46,
+				"playcount": 0,
+				"rating": 4.5999999046325683594,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fConfusi%20e%20Felici%20(2014)%2fConfusi.E.Felici.2014.iTALiAN.AC3.BDRip.XviD-BG-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Short%20Films%20of%20David%20Lynch%20(2002)%2f5.%20The%20Cowboy%20%26%20The%20Frenchman%20(1987)-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Short%20Films%20of%20David%20Lynch%20(2002)%2f5.%20The%20Cowboy%20%26%20The%20Frenchman%20(1987)-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/The Short Films of David Lynch (2002)/5. The Cowboy & The Frenchman (1987).mkv",
+				"label": "The Cowboy and the Frenchman",
+				"movieid": 239,
+				"playcount": 0,
+				"rating": 3.2999999523162841797,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Short%20Films%20of%20David%20Lynch%20(2002)%2f5.%20The%20Cowboy%20%26%20The%20Frenchman%20(1987)-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Croods%20(2013)%2fThe.Croods.2013.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Croods%20(2013)%2fThe.Croods.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/The Croods (2013)/The.Croods.2013.720p.BluRay.x264.YIFY.mp4",
+				"label": "The Croods",
+				"movieid": 206,
+				"playcount": 0,
+				"rating": 6.8000001907348632812,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Croods%20(2013)%2fThe.Croods.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fGiorni%20e%20Nuvole%20(2007)%2fGiorni.E.Nuvole-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fGiorni%20e%20Nuvole%20(2007)%2fGiorni.E.Nuvole-poster.jpg/"
+				},
+				"file": "stack://nfs://192.168.0.1/tmp/mnt/sdb3/Download/Giorni e Nuvole (2007)/Giorni.E.Nuvole.cd1.avi , nfs://192.168.0.1/tmp/mnt/sdb3/Download/Giorni e Nuvole (2007)/Giorni.E.Nuvole.cd2.avi",
+				"label": "Days and Clouds",
+				"movieid": 66,
+				"playcount": 0,
+				"rating": 0.0,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fGiorni%20e%20Nuvole%20(2007)%2fGiorni.E.Nuvole-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fDecoding%20Annie%20Parker%20(2013)%2fDecoding.Annie.Parker.2013.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fDecoding%20Annie%20Parker%20(2013)%2fDecoding.Annie.Parker.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Decoding Annie Parker (2013)/Decoding.Annie.Parker.2013.720p.BluRay.x264.YIFY.mp4",
+				"label": "Decoding Annie Parker",
+				"movieid": 47,
+				"playcount": 0,
+				"rating": 5.3000001907348632812,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fDecoding%20Annie%20Parker%20(2013)%2fDecoding.Annie.Parker.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fDespicable%20Me%202%20(2013)%20%5b1080p%5d%2fDespicable.Me.2.2013.1080p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fDespicable%20Me%202%20(2013)%20%5b1080p%5d%2fDespicable.Me.2.2013.1080p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Despicable Me 2 (2013) [1080p]/Despicable.Me.2.2013.1080p.BluRay.x264.YIFY.mp4",
+				"label": "Despicable Me 2",
+				"movieid": 48,
+				"playcount": 0,
+				"rating": 6.9000000953674316406,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fDespicable%20Me%202%20(2013)%20%5b1080p%5d%2fDespicable.Me.2.2013.1080p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fDirty%20Wars%20%5b2013%5d%2fDirty%20Wars%20%5b2013%5dHDRip%20XViD%20-ETRG-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fDirty%20Wars%20%5b2013%5d%2fDirty%20Wars%20%5b2013%5dHDRip%20XViD%20-ETRG-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Dirty Wars [2013]/Dirty Wars [2013]HDRip XViD -ETRG.avi",
+				"label": "Dirty Wars",
+				"movieid": 49,
+				"playcount": 0,
+				"rating": 7.5,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fDirty%20Wars%20%5b2013%5d%2fDirty%20Wars%20%5b2013%5dHDRip%20XViD%20-ETRG-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fDocumenti%20su%20Giuseppe%20Pinelli%20(1970)%2fElio%20Petri%20-%20%20Tre%20ipotesi%20sulla%20morte%20di%20Pinelli-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fDocumenti%20su%20Giuseppe%20Pinelli%20(1970)%2fElio%20Petri%20-%20%20Tre%20ipotesi%20sulla%20morte%20di%20Pinelli-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Documenti su Giuseppe Pinelli (1970)/Elio Petri -  Tre ipotesi sulla morte di Pinelli.avi",
+				"label": "Documenti su Giuseppe Pinelli",
+				"movieid": 50,
+				"playcount": 0,
+				"rating": 0.0,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fDocumenti%20su%20Giuseppe%20Pinelli%20(1970)%2fElio%20Petri%20-%20%20Tre%20ipotesi%20sulla%20morte%20di%20Pinelli-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Double%20(2013)%2fThe.Double.2013.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Double%20(2013)%2fThe.Double.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/The Double (2013)/The.Double.2013.720p.BluRay.x264.YIFY.mp4",
+				"label": "The Double",
+				"movieid": 208,
+				"playcount": 0,
+				"rating": 6.6999998092651367188,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Double%20(2013)%2fThe.Double.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fDrinking%20Buddies%20(2013)%2fDrinking.Buddies.2013.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fDrinking%20Buddies%20(2013)%2fDrinking.Buddies.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Drinking Buddies (2013)/Drinking.Buddies.2013.720p.BluRay.x264.YIFY.mp4",
+				"label": "Drinking Buddies",
+				"movieid": 51,
+				"playcount": 0,
+				"rating": 6.0,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fDrinking%20Buddies%20(2013)%2fDrinking.Buddies.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fEnd%20of%20Watch%20(2012)%2fEnd.of.Watch.2012.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fEnd%20of%20Watch%20(2012)%2fEnd.of.Watch.2012.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/End of Watch (2012)/End.of.Watch.2012.720p.BluRay.x264.YIFY.mp4",
+				"label": "End of Watch",
+				"movieid": 54,
+				"playcount": 0,
+				"rating": 6.8000001907348632812,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fEnd%20of%20Watch%20(2012)%2fEnd.of.Watch.2012.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fEnemy%20(2013)%2fEnemy.2013.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fEnemy%20(2013)%2fEnemy.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Enemy (2013)/Enemy.2013.720p.BluRay.x264.YIFY.mp4",
+				"label": "Enemy",
+				"movieid": 55,
+				"playcount": 0,
+				"rating": 6.0999999046325683594,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fEnemy%20(2013)%2fEnemy.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fEnough%20Said%20(2013)%2fEnough.Said.2013.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fEnough%20Said%20(2013)%2fEnough.Said.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Enough Said (2013)/Enough.Said.2013.720p.BluRay.x264.YIFY.mp4",
+				"label": "Enough Said",
+				"movieid": 56,
+				"playcount": 0,
+				"rating": 6.9000000953674316406,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fEnough%20Said%20(2013)%2fEnough.Said.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fIl%20volto%20di%20un%27altra%20(2012)%2fIl%20Volto%20Di%20Un%27altra%20(2012)%20DVDrip%20XviD%20Ac3%20-Shiv%40-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Il volto di un'altra (2012)/Il Volto Di Un'altra (2012) DVDrip XviD Ac3 -Shiv@.avi",
+				"label": "The Face of Another",
+				"movieid": 85,
+				"playcount": 0,
+				"rating": 6.0,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fIl%20volto%20di%20un%27altra%20(2012)%2fIl%20Volto%20Di%20Un%27altra%20(2012)%20DVDrip%20XviD%20Ac3%20-Shiv%40-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Family%20(2013)%2fThe.Family.2013.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Family%20(2013)%2fThe.Family.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/The Family (2013)/The.Family.2013.720p.BluRay.x264.YIFY.mp4",
+				"label": "The Family",
+				"movieid": 210,
+				"playcount": 0,
+				"rating": 6.3000001907348632812,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Family%20(2013)%2fThe.Family.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fFatti%20di%20gente%20perbene%20(1974)%2fFatti%20di%20gente%20perbene%20-%20Mauro%20Bolognini%201974%20%5bXviD%20ITA%5d-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Fatti di gente perbene (1974)/Fatti di gente perbene - Mauro Bolognini 1974 [XviD ITA].avi",
+				"label": "Fatti di gente perbene",
+				"movieid": 58,
+				"playcount": 0,
+				"rating": 6.0,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fFatti%20di%20gente%20perbene%20(1974)%2fFatti%20di%20gente%20perbene%20-%20Mauro%20Bolognini%201974%20%5bXviD%20ITA%5d-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fFearless%20(1993)%2fFearless.1993.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fFearless%20(1993)%2fFearless.1993.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Fearless (1993)/Fearless.1993.720p.BluRay.x264.YIFY.mp4",
+				"label": "Fearless",
+				"movieid": 59,
+				"playcount": 0,
+				"rating": 6.8000001907348632812,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fFearless%20(1993)%2fFearless.1993.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fFilth%20(2013)%2fFilth.2013.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fFilth%20(2013)%2fFilth.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Filth (2013)/Filth.2013.720p.BluRay.x264.YIFY.mp4",
+				"label": "Filth",
+				"movieid": 60,
+				"playcount": 0,
+				"rating": 6.8000001907348632812,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fFilth%20(2013)%2fFilth.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fBaraka.Food.Inc.Life.in.a.Day.In.the.Shadow.of.the.Moon.720p.x264.MIKY%2fFood.Inc.2008.720p.x264.MIKY%2fFood.Inc.2008.720p.x264.MIKY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fBaraka.Food.Inc.Life.in.a.Day.In.the.Shadow.of.the.Moon.720p.x264.MIKY%2fFood.Inc.2008.720p.x264.MIKY%2fFood.Inc.2008.720p.x264.MIKY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Baraka.Food.Inc.Life.in.a.Day.In.the.Shadow.of.the.Moon.720p.x264.MIKY/Food.Inc.2008.720p.x264.MIKY/Food.Inc.2008.720p.x264.MIKY.mp4",
+				"label": "Food, Inc.",
+				"movieid": 15,
+				"playcount": 0,
+				"rating": 7.3000001907348632812,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fBaraka.Food.Inc.Life.in.a.Day.In.the.Shadow.of.the.Moon.720p.x264.MIKY%2fFood.Inc.2008.720p.x264.MIKY%2fFood.Inc.2008.720p.x264.MIKY-poster.jpg/"
+			},
+			{
+				"art": {
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fGarden%20State%20(2004)%2falliance-garden.state-xvid-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Garden State (2004)/alliance-garden.state-xvid.avi",
+				"label": "Garden State",
+				"movieid": 63,
+				"playcount": 0,
+				"rating": 7.5999999046325683594,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fGarden%20State%20(2004)%2falliance-garden.state-xvid-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Short%20Films%20of%20David%20Lynch%20(2002)%2f3.%20The%20Grandmother%20(1970)-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Short%20Films%20of%20David%20Lynch%20(2002)%2f3.%20The%20Grandmother%20(1970)-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/The Short Films of David Lynch (2002)/3. The Grandmother (1970).mkv",
+				"label": "The Grandmother",
+				"movieid": 237,
+				"playcount": 0,
+				"rating": 6.8000001907348632812,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Short%20Films%20of%20David%20Lynch%20(2002)%2f3.%20The%20Grandmother%20(1970)-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fUna%20Lanterna%20per%20le%20Lucciole%20(1988)%2fUna%20lanterna%20p3r%20l3%20lucciol3-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fUna%20Lanterna%20per%20le%20Lucciole%20(1988)%2fUna%20lanterna%20p3r%20l3%20lucciol3-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Una Lanterna per le Lucciole (1988)/Una lanterna p3r l3 lucciol3.avi",
+				"label": "Grave of the Fireflies",
+				"movieid": 267,
+				"playcount": 0,
+				"rating": 7.8000001907348632812,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fUna%20Lanterna%20per%20le%20Lucciole%20(1988)%2fUna%20lanterna%20p3r%20l3%20lucciol3-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Great%20Gatsby%20(2013)%20%5b1080p%5d%2fThe.Great.Gatsby.2013.1080p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Great%20Gatsby%20(2013)%20%5b1080p%5d%2fThe.Great.Gatsby.2013.1080p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/The Great Gatsby (2013) [1080p]/The.Great.Gatsby.2013.1080p.BluRay.x264.YIFY.mp4",
+				"label": "The Great Gatsby",
+				"movieid": 215,
+				"playcount": 0,
+				"rating": 7.0999999046325683594,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Great%20Gatsby%20(2013)%20%5b1080p%5d%2fThe.Great.Gatsby.2013.1080p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Great%20Gatsby%20(2013)%20%5b3D%5d%20%5bHSBS%5d%2fThe.Great.Gatsby.2013.1080p.3D.HSBS.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Great%20Gatsby%20(2013)%20%5b3D%5d%20%5bHSBS%5d%2fThe.Great.Gatsby.2013.1080p.3D.HSBS.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/The Great Gatsby (2013) [3D] [HSBS]/The.Great.Gatsby.2013.1080p.3D.HSBS.BluRay.x264.YIFY.mp4",
+				"label": "The Great Gatsby [3D]",
+				"movieid": 214,
+				"playcount": 0,
+				"rating": 7.0999999046325683594,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fThe%20Great%20Gatsby%20(2013)%20%5b3D%5d%20%5bHSBS%5d%2fThe.Great.Gatsby.2013.1080p.3D.HSBS.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHearts%20and%20Minds%20(1974)%2fHearts.and.Minds.1974.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHearts%20and%20Minds%20(1974)%2fHearts.and.Minds.1974.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Hearts and Minds (1974)/Hearts.and.Minds.1974.720p.BluRay.x264.YIFY.mp4",
+				"label": "Hearts and Minds",
+				"movieid": 70,
+				"playcount": 0,
+				"rating": 8.0,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHearts%20and%20Minds%20(1974)%2fHearts.and.Minds.1974.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHer%20(2013)%2fHer.2013.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHer%20(2013)%2fHer.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Her (2013)/Her.2013.720p.BluRay.x264.YIFY.mp4",
+				"label": "Her",
+				"movieid": 71,
+				"playcount": 0,
+				"rating": 7.9000000953674316406,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHer%20(2013)%2fHer.2013.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHero%20(2002)%2fYing.xiong.%5bHero%5d.2002.BRRip.H264.AAC.5.1ch.Gopo-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHero%20(2002)%2fYing.xiong.%5bHero%5d.2002.BRRip.H264.AAC.5.1ch.Gopo-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Hero (2002)/Ying.xiong.[Hero].2002.BRRip.H264.AAC.5.1ch.Gopo.mp4",
+				"label": "Hero",
+				"movieid": 72,
+				"playcount": 0,
+				"rating": 6.4000000953674316406,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHero%20(2002)%2fYing.xiong.%5bHero%5d.2002.BRRip.H264.AAC.5.1ch.Gopo-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHope%20Springs%20(2012)%2fHope.Springs.2012.BrRip.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHope%20Springs%20(2012)%2fHope.Springs.2012.BrRip.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Hope Springs (2012)/Hope.Springs.2012.BrRip.x264.YIFY.mp4",
+				"label": "Hope Springs",
+				"movieid": 73,
+				"playcount": 0,
+				"rating": 5.4000000953674316406,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHope%20Springs%20(2012)%2fHope.Springs.2012.BrRip.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHotel%20Rwanda%20(2004)%2fHotel%20Rwanda%20(2004)%20DVDrip%20XviD%20%5bResourceRG%5d-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHotel%20Rwanda%20(2004)%2fHotel%20Rwanda%20(2004)%20DVDrip%20XviD%20%5bResourceRG%5d-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Hotel Rwanda (2004)/Hotel Rwanda (2004) DVDrip XviD [ResourceRG].avi",
+				"label": "Hotel Rwanda",
+				"movieid": 74,
+				"playcount": 0,
+				"rating": 6.8000001907348632812,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHotel%20Rwanda%20(2004)%2fHotel%20Rwanda%20(2004)%20DVDrip%20XviD%20%5bResourceRG%5d-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHouse%20of%20Flying%20Daggers%20(2004)%2fHouse%20of%20Flying%20Daggers%202004%20%5bShi%20mian%20mai%20fu%5d%20BluRayRip%20720p%205_1_ch%20AVCHD%20h264%20AAC%20subs%202hrs-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHouse%20of%20Flying%20Daggers%20(2004)%2fHouse%20of%20Flying%20Daggers%202004%20%5bShi%20mian%20mai%20fu%5d%20BluRayRip%20720p%205_1_ch%20AVCHD%20h264%20AAC%20subs%202hrs-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/House of Flying Daggers (2004)/House of Flying Daggers 2004 [Shi mian mai fu] BluRayRip 720p 5_1_ch AVCHD h264 AAC subs 2hrs.mp4",
+				"label": "House of Flying Daggers",
+				"movieid": 75,
+				"playcount": 0,
+				"rating": 6.5,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHouse%20of%20Flying%20Daggers%20(2004)%2fHouse%20of%20Flying%20Daggers%202004%20%5bShi%20mian%20mai%20fu%5d%20BluRayRip%20720p%205_1_ch%20AVCHD%20h264%20AAC%20subs%202hrs-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHow%20to%20Train%20Your%20Dragon%202%20(2014)%20%5b1080p%5d%2fHow.to.Train.Your.Dragon.2.2014.1080p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHow%20to%20Train%20Your%20Dragon%202%20(2014)%20%5b1080p%5d%2fHow.to.Train.Your.Dragon.2.2014.1080p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/How to Train Your Dragon 2 (2014) [1080p]/How.to.Train.Your.Dragon.2.2014.1080p.BluRay.x264.YIFY.mp4",
+				"label": "How to Train Your Dragon 2",
+				"movieid": 76,
+				"playcount": 0,
+				"rating": 8.1999998092651367188,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHow%20to%20Train%20Your%20Dragon%202%20(2014)%20%5b1080p%5d%2fHow.to.Train.Your.Dragon.2.2014.1080p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fIl%20Capitale%20Umano%20(2013)%2fIl.Capitale.Umano.2013.iTA.AC3.Bluray.1080p.MultiSubs.x264-DSS-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fIl%20Capitale%20Umano%20(2013)%2fIl.Capitale.Umano.2013.iTA.AC3.Bluray.1080p.MultiSubs.x264-DSS-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Il Capitale Umano (2013)/Il.Capitale.Umano.2013.iTA.AC3.Bluray.1080p.MultiSubs.x264-DSS.mkv",
+				"label": "Human Capital",
+				"movieid": 81,
+				"playcount": 0,
+				"rating": 7.8000001907348632812,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fIl%20Capitale%20Umano%20(2013)%2fIl.Capitale.Umano.2013.iTA.AC3.Bluray.1080p.MultiSubs.x264-DSS-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHunger%20(2008)%2fHunger.2008.720p.BluRay.x264.YIFY-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHunger%20(2008)%2fHunger.2008.720p.BluRay.x264.YIFY-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Hunger (2008)/Hunger.2008.720p.BluRay.x264.YIFY.mp4",
+				"label": "Hunger",
+				"movieid": 77,
+				"playcount": 0,
+				"rating": 7.5,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fHunger%20(2008)%2fHunger.2008.720p.BluRay.x264.YIFY-poster.jpg/"
+			},
+			{
+				"art": {
+					"fanart": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fSmetto%20quando%20voglio%20(2014)%2fSmetto.Quando.Voglio.2014.iTALiAN.AC3.DVDRip.XviD-T4P3-fanart.jpg/",
+					"poster": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fSmetto%20quando%20voglio%20(2014)%2fSmetto.Quando.Voglio.2014.iTALiAN.AC3.DVDRip.XviD-T4P3-poster.jpg/"
+				},
+				"file": "nfs://192.168.0.1/tmp/mnt/sdb3/Download/Smetto quando voglio (2014)/Smetto.Quando.Voglio.2014.iTALiAN.AC3.DVDRip.XviD-T4P3.avi",
+				"label": "I Can Quit Whenever I Want",
+				"movieid": 185,
+				"playcount": 0,
+				"rating": 7.3000001907348632812,
+				"thumbnail": "image://nfs%3a%2f%2f192.168.0.1%2ftmp%2fmnt%2fsdb3%2fDownload%2fSmetto%20quando%20voglio%20(2014)%2fSmetto.Quando.Voglio.2014.iTALiAN.AC3.DVDRip.XviD-T4P3-poster.jpg/"
+			}
+		]
+	}
+}
