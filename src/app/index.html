@@ -8,10 +8,11 @@
  <script src="vendor/backbone/backbone.js"></script>
  <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+ <link href="css/simple-sidebar/simple-sidebar.css" rel="stylesheet">
  <style type="text/css">
  body {
   padding: 50px 100px 50px 50px;
-  background-color: black;
+  background-color: gray;
  }
  .thumbnail {
    background-color: lightblue;
@@ -20,8 +21,30 @@
  </style>
 </head>
 <body>
-<div class="page-header"><h1 class="text-center text-info">Movie list</h1></div>
-<div id="movielist">
+<div id="wrapper">
+            <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="#">Movies</a>
+                </li>
+                <li>
+                    <a href="#">TvShow</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                            <div class="page-header"><h1 class="text-center text-info">Movie list</h1></div>
+                            <div id="movielist">
+                            </div>
+                    </div>
+                </div>
+            </div>
+    </div>
 </div>
 <script>
 
@@ -70,3 +93,4 @@ function writeMovieList(movieListJSON) {
 
 </script>
 </body>
+</html>
