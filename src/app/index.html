@@ -7,6 +7,7 @@
  <script src="vendor/underscore/underscore.js"></script>
  <script src="vendor/backbone/backbone.js"></script>
  <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+  <script type="text/javascript" src="lib/jsonform/jsonform.js"></script>
  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
  <link href="css/simple-sidebar/simple-sidebar.css" rel="stylesheet">
  <style type="text/css">
@@ -16,8 +17,16 @@
         background-attachment: fixed;
     }
 
+    body.modal-open .blurred-background {
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+    }
+
      .col-sm-3 {
-         border: 1px solid;
+         /* border: 1px solid; */
          height: 220px;
      }
 
@@ -36,7 +45,27 @@
  </style>
 </head>
 <body>
-<div id="wrapper">
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="EditMovieModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Edit Movie</h4>
+        </div>
+        <div class="modal-body">
+          <p>One fine body&hellip;</p>
+          <form id="ModalMovieForm"></form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+<div id="wrapper" class="blurred-background">
             <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
@@ -62,11 +91,6 @@
 </div>
 <script>
 
-function posterClick() {
-
-
-}
-
 function writeMovieList(movieListJSON) {
 
     var i=1;
@@ -84,7 +108,7 @@ function writeMovieList(movieListJSON) {
         strHTML += '<div class="caption"><p class="text-center">' + movieDetails.label + '</p>';
         strHTML += '<p class="text-center"><button type="button" class="btn btn-info">Info</button></p></div></div></div>'; */
 
-        strHTML += '<img class="poster" src="' + thumbURI + '" width="126px" height="180px"></div>'
+        strHTML += '<img class="poster" data-toggle="modal" data-target="#EditMovieModal" data-movieid="' + movieDetails.movieid + '" data-movietitle="' +  movieDetails.label + '" Title src="' + thumbURI + '" width="126px" height="180px"></div>'
         i++;
         if (i==5) {
           strHTML += '</div>';
@@ -97,8 +121,8 @@ function writeMovieList(movieListJSON) {
 }
 
 // Code to fecth JSON from server - Disabled for development / testing
-    var serverKodi = "http://gverni3.eu.qualcomm.com:8890/";
-//    var serverKodi = "http://192.168.0.203/";
+//    var serverKodi = "http://gverni3.eu.qualcomm.com:8890/";
+    var serverKodi = "http://192.168.0.203/";
     var urlJsonRPC = "jsonrpc?request=";
     var stringJson = '{"jsonrpc": "2.0", "method": "VideoLibrary.GetMovies", "params": { "filter": {"field": "playcount", "operator": "is", "value": "0"}, "limits": { "start" : 0, "end": 75 }, "properties" : ["art", "rating", "thumbnail", "playcount", "file"], "sort": { "order": "ascending", "method": "label", "ignorearticle": true } }, "id": "libMovies"}';
 
@@ -117,5 +141,25 @@ function writeMovieList(movieListJSON) {
     });
 
 </script>
+<script>
+
+$('#EditMovieModal').on('show.bs.modal', function (event) {
+
+  var trigger = $(event.relatedTarget);
+  var movieTitle = trigger.data('movietitle');
+  var movieId = trigger.data('movieid');
+  var jsonGetMovieDetail = `{"jsonrpc": "2.0", "method": "VideoLibrary.GetMovieDetails", "params": { "movieid": ${movieId} ,  "properties": ["title"] }, "id": "MovieDetail"}`;
+  $.getJSON(serverKodi + urlJsonRPC + jsonGetMovieDetail, jQuery.noop)
+  .error(function() { alert("Error reading JSON"); })
+  .success(function(data) {
+    var modal = $(this);
+    modal.find('.modal-title').text('Title: ' + movieTitle);
+     $('#ModalMovieForm').jsonForm(data.moviedetails);
+  });
+
+})
+
+</script>
+
 </body>
 </html>
