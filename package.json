@@ -5,7 +5,7 @@
   "main": "./src/app/index.html",
   "window": {
     "position": "center",
-    "width": 1200,
+    "width": 1140,
     "height": 600,
     "min_width": 220,
     "min_height": 220
