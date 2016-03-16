@@ -10,14 +10,29 @@
  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
  <link href="css/simple-sidebar/simple-sidebar.css" rel="stylesheet">
  <style type="text/css">
- body {
-  padding: 50px 100px 50px 50px;
-  background-color: gray;
- }
- .thumbnail {
-   background-color: lightblue;
- 	height: 300px;
- }
+    body {
+        padding: 50px 100px 50px 50px;
+        background-image: url("img/background_green.jpg");
+        background-attachment: fixed;
+    }
+
+     .col-sm-3 {
+         border: 1px solid;
+         height: 220px;
+     }
+
+     .poster {
+         box-shadow: 10px 10px 5px black;
+     }
+
+     .poster:active {
+         margin-top: 10px;
+         margin-left: 10px;
+         /* height: 160px;
+         width: 106px; */
+         box-shadow: 0px 0px 0px black;
+     }
+
  </style>
 </head>
 <body>
@@ -38,7 +53,6 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                            <div class="page-header"><h1 class="text-center text-info">Movie list</h1></div>
                             <div id="movielist">
                             </div>
                     </div>
@@ -48,10 +62,15 @@
 </div>
 <script>
 
+function posterClick() {
+
+
+}
+
 function writeMovieList(movieListJSON) {
 
     var i=1;
-    var strHTML;
+    var strHTML="";
     var thumbURI;
     //strHTML = "Total movies:" + movieListJSON.result.limits.total + "<br/>";
     var movieListDetails = movieListJSON.result.movies;
@@ -59,10 +78,13 @@ function writeMovieList(movieListJSON) {
         if (i == 1) {strHTML += '<div class="row">'};
         strHTML += '<div class="col-sm-3 col-md-3">';
         thumbURI = decodeURIComponent(movieDetails.thumbnail.substring(8,movieDetails.thumbnail.length-1));
-        if (!(thumbURI.startsWith("http"))) {thumbURI = "http://osmc/vfs/" + thumbURI};
-        strHTML += '<div class="thumbnail"><img src="' + thumbURI + '" height="50%" width="50%">';
+        if (!(thumbURI.startsWith("http"))) {thumbURI = serverKodi + "vfs/" + thumbURI};
+
+        /* strHTML += '<div class="thumbnail"><img src="' + thumbURI + '" height="50%" width="50%">';
         strHTML += '<div class="caption"><p class="text-center">' + movieDetails.label + '</p>';
-        strHTML += '<p class="text-center"><button type="button" class="btn btn-info">Info</button></p></div></div></div>';
+        strHTML += '<p class="text-center"><button type="button" class="btn btn-info">Info</button></p></div></div></div>'; */
+
+        strHTML += '<img class="poster" src="' + thumbURI + '" width="126px" height="180px"></div>'
         i++;
         if (i==5) {
           strHTML += '</div>';
@@ -74,15 +96,18 @@ function writeMovieList(movieListJSON) {
 
 }
 
-/* Code to fecth JSON from server - Disabled for development / testing
-//    var serverKodi = "http://gverni3.eu.qualcomm.com:8890/";
-    var serverKodi = "http://192.168.0.203/";
+// Code to fecth JSON from server - Disabled for development / testing
+    var serverKodi = "http://gverni3.eu.qualcomm.com:8890/";
+//    var serverKodi = "http://192.168.0.203/";
     var urlJsonRPC = "jsonrpc?request=";
-    var stringJson = ''{"jsonrpc": "2.0", "method": "VideoLibrary.GetMovies", "params": { "filter": {"field": "playcount", "operator": "is", "value": "0"}, "limits": { "start" : 0, "end": 75 }, "properties" : ["art", "rating", "thumbnail", "playcount", "file"], "sort": { "order": "ascending", "method": "label", "ignorearticle": true } }, "id": "libMovies"}';
-*/
-    var serverKodi = "../../test_files/";
+    var stringJson = '{"jsonrpc": "2.0", "method": "VideoLibrary.GetMovies", "params": { "filter": {"field": "playcount", "operator": "is", "value": "0"}, "limits": { "start" : 0, "end": 75 }, "properties" : ["art", "rating", "thumbnail", "playcount", "file"], "sort": { "order": "ascending", "method": "label", "ignorearticle": true } }, "id": "libMovies"}';
+
+// Settings for development
+/*  var serverKodi = "../../test_files/";
     var urlJsonRPC = "";
     var stringJson = "videolibrary.getmovies_resp.json";
+*/
+
     var urlKodi = serverKodi + urlJsonRPC + stringJson;
 
     $.getJSON(urlKodi, jQuery.noop)
