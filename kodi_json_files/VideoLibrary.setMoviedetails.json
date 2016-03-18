@@ -1,0 +1,18 @@
+Examples
+{
+    "jsonrpc": "2.0", 
+    "method": "VideoLibrary.SetMovieDetails", 
+    "params": { 
+        "movieid": , 
+        "director": []"Giuseppe Verni" ]
+    },
+    "id": "libMovies"
+}
+
+
+Example
+
+
+{"jsonrpc": "2.0",     "method": "VideoLibrary.SetMovieDetails",     "params": { "movieid": 317, "director": {["",Giuseppe Verni"} },"id": "libMovies"}
+
+{"jsonrpc": "2.0", "method": "VideoLibrary.SetMovieDetails", "params": { "movieid": 317, "director":["Giuseppe Verni"]},"id": "libMovies"}
