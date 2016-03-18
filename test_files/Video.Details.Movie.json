@@ -1,0 +1,83 @@
+{
+  "id": "Video.Details.Movie", 
+  "properties": {
+    "plotoutline": {
+      "type": "string", 
+      "default": ""
+    }, 
+    "sorttitle": {
+      "type": "string", 
+      "default": ""
+    }, 
+    "movieid": {
+      "$ref": "Library.Id", 
+      "required": true
+    }, 
+    "cast": {
+      "$ref": "Video.Cast"
+    }, 
+    "votes": {
+      "type": "string", 
+      "default": ""
+    }, 
+    "showlink": {
+      "$ref": "Array.String"
+    }, 
+    "top250": {
+      "type": "integer", 
+      "default": 0
+    }, 
+    "trailer": {
+      "type": "string", 
+      "default": ""
+    }, 
+    "year": {
+      "type": "integer", 
+      "default": 0
+    }, 
+    "country": {
+      "$ref": "Array.String"
+    }, 
+    "studio": {
+      "$ref": "Array.String"
+    }, 
+    "set": {
+      "type": "string", 
+      "default": ""
+    }, 
+    "genre": {
+      "$ref": "Array.String"
+    }, 
+    "mpaa": {
+      "type": "string", 
+      "default": ""
+    }, 
+    "setid": {
+      "$ref": "Library.Id", 
+      "default": -1
+    }, 
+    "rating": {
+      "type": "number", 
+      "default": 0
+    }, 
+    "tag": {
+      "$ref": "Array.String"
+    }, 
+    "tagline": {
+      "type": "string", 
+      "default": ""
+    }, 
+    "writer": {
+      "$ref": "Array.String"
+    }, 
+    "originaltitle": {
+      "type": "string", 
+      "default": ""
+    }, 
+    "imdbnumber": {
+      "type": "string", 
+      "default": ""
+    }
+  }, 
+  "extends": "Video.Details.File"
+}

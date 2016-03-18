@@ -1,0 +1,43 @@
+{
+  "items": {
+    "enums": [
+      "title", 
+      "genre", 
+      "year", 
+      "rating", 
+      "director", 
+      "trailer", 
+      "tagline", 
+      "plot", 
+      "plotoutline", 
+      "originaltitle", 
+      "lastplayed", 
+      "playcount", 
+      "writer", 
+      "studio", 
+      "mpaa", 
+      "cast", 
+      "country", 
+      "imdbnumber", 
+      "runtime", 
+      "set", 
+      "showlink", 
+      "streamdetails", 
+      "top250", 
+      "votes", 
+      "fanart", 
+      "thumbnail", 
+      "file", 
+      "sorttitle", 
+      "resume", 
+      "setid", 
+      "dateadded", 
+      "tag", 
+      "art"
+    ], 
+    "description": "Requesting the cast, showlink and/or tag field will result in increased response times", 
+    "type": "string"
+  }, 
+  "id": "Video.Fields.Movie", 
+  "extends": "Item.Fields.Base"
+}
