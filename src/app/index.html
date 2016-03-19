@@ -7,7 +7,6 @@
  <script src="vendor/underscore/underscore.js"></script>
  <script src="vendor/backbone/backbone.js"></script>
  <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
-  <script type="text/javascript" src="lib/jsonform/jsonform.js"></script>
  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
  <link href="css/simple-sidebar/simple-sidebar.css" rel="stylesheet">
  <style type="text/css">
@@ -46,7 +45,7 @@
 </head>
 <body>
 
-<div w3-include-HTML="modal.html">My HTML include will go here.</div>
+<div w3-include-HTML="EditMovieModal.html">My HTML include will go here.</div>
 
 <div id="wrapper" class="blurred-background">
             <!-- Sidebar -->
@@ -104,10 +103,10 @@ function writeMovieList(movieListJSON) {
 }
 
 // Code to fecth JSON from server - Disabled for development / testing
-//    var serverKodi = "http://gverni3.eu.qualcomm.com:8890/";
-    var serverKodi = "http://192.168.0.203/";
+    var serverKodi = "http://gverni3:8890/";
+//    var serverKodi = "http://192.168.0.203/";
     var urlJsonRPC = "jsonrpc?request=";
-    var stringJson = '{"jsonrpc": "2.0", "method": "VideoLibrary.GetMovies", "params": { "filter": {"field": "playcount", "operator": "is", "value": "0"}, "limits": { "start" : 0, "end": 75 }, "properties" : ["art", "rating", "thumbnail", "playcount", "file"], "sort": { "order": "ascending", "method": "label", "ignorearticle": true } }, "id": "libMovies"}';
+    var stringJson = '{"jsonrpc": "2.0", "method": "VideoLibrary.GetMovies", "params": { "filter": {"field": "playcount", "operator": "is", "value": "0"}, "limits": { "start" : 0, "end": 25 }, "properties" : ["art", "rating", "thumbnail", "playcount", "file"], "sort": { "order": "ascending", "method": "label", "ignorearticle": true } }, "id": "libMovies"}';
 
 // Settings for development
 /*  var serverKodi = "../../test_files/";
@@ -126,22 +125,42 @@ function writeMovieList(movieListJSON) {
 </script>
 <script>
 
-$('#EditMovieModal').on('show.bs.modal', function (event) {
+// Scripts for EditMovieModalvar 
 
+var objMovieDetailsModal; 
+    
+$('#EditMovieModal').on('show.bs.modal', function (event) {
   var trigger = $(event.relatedTarget);
   var movieTitle = trigger.data('movietitle');
   var movieId = trigger.data('movieid');
-  var jsonGetMovieDetail = `{"jsonrpc": "2.0", "method": "VideoLibrary.GetMovieDetails", "params": { "movieid": ${movieId} ,  "properties": ["title"] }, "id": "MovieDetail"}`;
+  var jsonGetMovieDetail = `{"jsonrpc": "2.0", "method": "VideoLibrary.GetMovieDetails", "params": { "movieid": ${movieId} ,  "properties": ["title", "genre", "year", "rating", "director", "trailer", "tagline", "originaltitle", "lastplayed", "playcount", "writer", "studio", "mpaa", "country", "imdbnumber", "runtime", "set", "showlink", "top250", "votes", "thumbnail", "file", "sorttitle", "setid", "dateadded", "tag"] }, "id": "MovieDetail"}`;
   $.getJSON(serverKodi + urlJsonRPC + jsonGetMovieDetail, jQuery.noop)
   .error(function() { alert("Error reading JSON"); })
   .success(function(data) {
-    var modal = $(this);
-    modal.find('.modal-title').text('Title: ' + movieTitle);
-     $('#ModalMovieForm').jsonForm(data.moviedetails);
+    $('.modal-title').text('Title: ' + movieTitle);
+    objMovieDetailsModal = data.result.moviedetails; 
+    $.each(objMovieDetailsModal, function(label, value) {
+        $('#ModalMovieForm').append("<div class='form-group''><label for='frm" + label + "'>" + label + "</label><input name='frm" + label + "' class='form-control' type='text' value='" + value + "'></div>");     
+    })
   });
+});
 
-})
+$('#EditMovieModal').on('hidden.bs.modal', function (event) {
+    //Reset form    
+    $('#ModalMovieForm').html("") 
+});
 
+function saveMovieChanges() {
+    //Create object from form 
+    var objFromForm = {}; 
+    //objFromForm.add("dateadded": "bla bla"); 
+    //Iterate through $("#ModalMovieForm")[0][i] for the legth of the array  Iterate through $("#ModalMovieForm")[0].length
+    // For each element create an object using key as $("#ModalMovieForm")[0][i].name and value $("#ModalMovieForm")[0][i].value
+    //Compare object created with objMovieDetailsModal and extract only value that have changed
+    //Update only value changed
+    alert ("Saving movies"); 
+}
+    
 </script>
 <script>
 (function () {
@@ -152,17 +171,15 @@ function myHTMLInclude() {
   var z, i, a, file, xhttp;
   z = document.getElementsByTagName("*");
   for (i = 0; i < z.length; i++) {
-    if (z[i].getAttribute("w3-include-html")) {
+    if (z[i].getAttribute("include-html")) {
       a = z[i].cloneNode(false);
-      file = z[i].getAttribute("w3-include-html");
+      file = z[i].getAttribute("include-html");
       var xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
-//        if (xhttp.readyState == 4 && xhttp.status == 200) {
-          a.removeAttribute("w3-include-html");
+          a.removeAttribute("include-html");
           a.innerHTML = xhttp.responseText;
           z[i].parentNode.replaceChild(a, z[i]);
           myHTMLInclude();
-//        }
       }      
       xhttp.open("GET", file, true);
       xhttp.send();
