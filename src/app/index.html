@@ -48,7 +48,7 @@
    initialize: function() {
      console.log("MovieDetails initialize");
      this.on("change", function() {
-         console.log(this.changedAttributes);
+         console.log("Changed attributes" + this.changedAttributes());
      });
    },
  });
@@ -67,7 +67,6 @@
           <h4 class="modal-title">Edit Movie</h4>
         </div>
         <div class="modal-body">
-          <p>One fine body&hellip;</p>
           <form id="ModalMovieForm"></form>
         </div>
         <div class="modal-footer">
@@ -134,8 +133,8 @@ function writeMovieList(movieListJSON) {
 }
 
 // Code to fecth JSON from server - Disabled for development / testing
-    var serverKodi = "http://10.222.224.157:8890/";
-//    var serverKodi = "http://192.168.0.203/";
+//    var serverKodi = "http://10.222.224.157:8890/";
+    var serverKodi = "http://192.168.0.203/";
     var urlJsonRPC = "jsonrpc?request=";
     var stringJson = '{"jsonrpc": "2.0", "method": "VideoLibrary.GetMovies", "params": { "filter": {"field": "playcount", "operator": "is", "value": "0"}, "limits": { "start" : 0, "end": 25 }, "properties" : ["art", "rating", "thumbnail", "playcount", "file"], "sort": { "order": "ascending", "method": "label", "ignorearticle": true } }, "id": "libMovies"}';
 
@@ -171,7 +170,7 @@ $('#EditMovieModal').on('show.bs.modal', function (event) {
     $('.modal-title').text('Title: ' + movieTitle);
     movieDetails.set(data.result.moviedetails);
         $.each(movieDetails.attributes, function(label, value) {
-        $('#ModalMovieForm').append("<div class='form-group''><label for='frm" + label + "'>" + label + "</label><input name='frm" + label + "' class='form-control' type='text' value='" + value + "'></div>");
+        $('#ModalMovieForm').append("<div class='form-group''><label for='frm" + label + "'>" + label + "</label><input name='frm" + label + "' class='form-control' type='text' data-type='" + (typeof value) +  "' value='" + ((typeof value === "object") ? String(value) : value) + "'></div>");
     })
   });
 });
@@ -184,12 +183,16 @@ $('#EditMovieModal').on('hidden.bs.modal', function (event) {
 function saveMovieChanges() {
     //Create object from form
     var objFromForm = {};
-    //Iterate through $("#ModalMovieForm")[0][i] for the legth of the array  Iterate through $("#ModalMovieForm")[0].length
-    //objFromForm[$("#ModalMovieForm")[0][i].name] = $("#ModalMovieForm")[0][i].value
-    //Use movieDetails.set(objFromForm) tto assigne the object
-    // The change event handler in the model will figure out the changes. There we update the JSON server
-
-    alert ("Saving movies");
+    for (var i=0; i < $("#ModalMovieForm")[0].length; i++) {
+      if ($("#ModalMovieForm")[0][i].attributes["data-type"].value === "object") {
+        objFromForm[$("#ModalMovieForm")[0][i].name.substring(3)] = $("#ModalMovieForm")[0][i].value.split(",");
+      } else {
+        objFromForm[$("#ModalMovieForm")[0][i].name.substring(3)] = $("#ModalMovieForm")[0][i].value;
+      }
+    }
+    //Let Backbone model find & save changes.....
+    console.log(JSON.stringify(objFromForm));
+    movieDetails.set(objFromForm);
 }
 
 </script>
