@@ -42,10 +42,24 @@
      }
 
  </style>
+ <script>
+ // Backbone integration
+ var MovieDetails = Backbone.Model.extend({
+   initialize: function() {
+     console.log("MovieDetails initialize");
+     this.on("change", function() {
+         console.log(this.changedAttributes);
+     });
+   },
+ });
+
+ var movieDetails = new MovieDetails();
+
+ </script>
 </head>
 <body>
 
-  <div class="modal fade" tabindex="-1" role="dialog" id="EditMovieModal">
+ <div class="modal fade" tabindex="-1" role="dialog" id="EditMovieModal">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -58,7 +72,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary" onclick="saveMovieChanges();">Save changes</button>
         </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
@@ -120,7 +134,7 @@ function writeMovieList(movieListJSON) {
 }
 
 // Code to fecth JSON from server - Disabled for development / testing
-    var serverKodi = "http://gverni3:8890/";
+    var serverKodi = "http://10.222.224.157:8890/";
 //    var serverKodi = "http://192.168.0.203/";
     var urlJsonRPC = "jsonrpc?request=";
     var stringJson = '{"jsonrpc": "2.0", "method": "VideoLibrary.GetMovies", "params": { "filter": {"field": "playcount", "operator": "is", "value": "0"}, "limits": { "start" : 0, "end": 25 }, "properties" : ["art", "rating", "thumbnail", "playcount", "file"], "sort": { "order": "ascending", "method": "label", "ignorearticle": true } }, "id": "libMovies"}';
@@ -142,10 +156,10 @@ function writeMovieList(movieListJSON) {
 </script>
 <script>
 
-// Scripts for EditMovieModalvar 
+// Scripts for EditMovieModalvar
 
-var objMovieDetailsModal; 
-    
+var objMovieDetailsModal;
+
 $('#EditMovieModal').on('show.bs.modal', function (event) {
   var trigger = $(event.relatedTarget);
   var movieTitle = trigger.data('movietitle');
@@ -155,29 +169,29 @@ $('#EditMovieModal').on('show.bs.modal', function (event) {
   .error(function() { alert("Error reading JSON"); })
   .success(function(data) {
     $('.modal-title').text('Title: ' + movieTitle);
-    objMovieDetailsModal = data.result.moviedetails; 
-    $.each(objMovieDetailsModal, function(label, value) {
-        $('#ModalMovieForm').append("<div class='form-group''><label for='frm" + label + "'>" + label + "</label><input name='frm" + label + "' class='form-control' type='text' value='" + value + "'></div>");     
+    movieDetails.set(data.result.moviedetails);
+        $.each(movieDetails.attributes, function(label, value) {
+        $('#ModalMovieForm').append("<div class='form-group''><label for='frm" + label + "'>" + label + "</label><input name='frm" + label + "' class='form-control' type='text' value='" + value + "'></div>");
     })
   });
 });
 
 $('#EditMovieModal').on('hidden.bs.modal', function (event) {
-    //Reset form    
-    $('#ModalMovieForm').html("") 
+    //Reset form
+    $('#ModalMovieForm').html("")
 });
 
 function saveMovieChanges() {
-    //Create object from form 
-    var objFromForm = {}; 
-    //objFromForm.add("dateadded": "bla bla"); 
+    //Create object from form
+    var objFromForm = {};
     //Iterate through $("#ModalMovieForm")[0][i] for the legth of the array  Iterate through $("#ModalMovieForm")[0].length
-    // For each element create an object using key as $("#ModalMovieForm")[0][i].name and value $("#ModalMovieForm")[0][i].value
-    //Compare object created with objMovieDetailsModal and extract only value that have changed
-    //Update only value changed
-    alert ("Saving movies"); 
+    //objFromForm[$("#ModalMovieForm")[0][i].name] = $("#ModalMovieForm")[0][i].value
+    //Use movieDetails.set(objFromForm) tto assigne the object
+    // The change event handler in the model will figure out the changes. There we update the JSON server
+
+    alert ("Saving movies");
 }
-    
+
 </script>
 </body>
 </html>
