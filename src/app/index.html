@@ -24,6 +24,16 @@
     filter: blur(4px);
     }
 
+    .sidebar-nav-divider {
+      display: block;
+      text-decoration: none;
+      background-color: transparent;
+      color: transparent;
+      background: transparent; 
+      height: 20px;
+
+    }
+
      .col-sm-3 {
          /* border: 1px solid; */
          height: 220px;
@@ -82,10 +92,18 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li>
+                  <a href="#">Search</a>
+                </li>
+                <li class="sidebar-nav-divider"></li>
+                <li>
                     <a href="#">Movies</a>
                 </li>
                 <li>
                     <a href="#">TvShow</a>
+                </li>
+                <li class="sidebar-nav-divider"></li>
+                <li>
+                    <a href="#">Settings</a>
                 </li>
             </ul>
         </div>
@@ -115,11 +133,6 @@ function writeMovieList(movieListJSON) {
         strHTML += '<div class="col-sm-3 col-md-3">';
         thumbURI = decodeURIComponent(movieDetails.thumbnail.substring(8,movieDetails.thumbnail.length-1));
         if (!(thumbURI.startsWith("http"))) {thumbURI = serverKodi + "vfs/" + thumbURI};
-
-        /* strHTML += '<div class="thumbnail"><img src="' + thumbURI + '" height="50%" width="50%">';
-        strHTML += '<div class="caption"><p class="text-center">' + movieDetails.label + '</p>';
-        strHTML += '<p class="text-center"><button type="button" class="btn btn-info">Info</button></p></div></div></div>'; */
-
         strHTML += '<img class="poster" data-toggle="modal" data-target="#EditMovieModal" data-movieid="' + movieDetails.movieid + '" data-movietitle="' +  movieDetails.label + '" Title src="' + thumbURI + '" width="126px" height="180px"></div>'
         i++;
         if (i==5) {
@@ -136,7 +149,7 @@ function writeMovieList(movieListJSON) {
 //    var serverKodi = "http://10.222.224.157:8890/";
     var serverKodi = "http://192.168.0.203/";
     var urlJsonRPC = "jsonrpc?request=";
-    var stringJson = '{"jsonrpc": "2.0", "method": "VideoLibrary.GetMovies", "params": { "filter": {"field": "playcount", "operator": "is", "value": "0"}, "limits": { "start" : 0, "end": 25 }, "properties" : ["art", "rating", "thumbnail", "playcount", "file"], "sort": { "order": "ascending", "method": "label", "ignorearticle": true } }, "id": "libMovies"}';
+    var stringJsonGetMoviesList = '{"jsonrpc": "2.0", "method": "VideoLibrary.GetMovies", "params": { "filter": {"field": "playcount", "operator": "is", "value": "0"}, "limits": { "start" : 0, "end": 25 }, "properties" : ["art", "rating", "thumbnail", "playcount", "file"], "sort": { "order": "ascending", "method": "label", "ignorearticle": true } }, "id": "libMovies"}';
 
 // Settings for development
 /*  var serverKodi = "../../test_files/";
@@ -144,7 +157,7 @@ function writeMovieList(movieListJSON) {
     var stringJson = "videolibrary.getmovies_resp.json";
 */
 
-    var urlKodi = serverKodi + urlJsonRPC + stringJson;
+    var urlKodi = serverKodi + urlJsonRPC + stringJsonGetMoviesList;
 
     $.getJSON(urlKodi, jQuery.noop)
     .error(function() { alert("Error reading JSON"); })
@@ -191,7 +204,6 @@ function saveMovieChanges() {
       }
     }
     //Let Backbone model find & save changes.....
-    console.log(JSON.stringify(objFromForm));
     movieDetails.set(objFromForm);
 }
 
