@@ -17,10 +17,10 @@ requirejs(["text!EditMovieModal.html"], function(html) {
     .error(function() { alert("Error reading JSON"); })
     .success(function(data) {
       $('.modal-title').text('Title: ' + movieTitle);
-      objMovieDetailsModal = data.result.moviedetails;
-      $.each(objMovieDetailsModal, function(label, value) {
-          $('#ModalMovieForm').append("<div class='form-group''><label for='frm" + label + "'>" + label + "</label><input name='frm" + label + "' class='form-control' type='text' value='" + value + "'></div>");
-        })
+      movieDetails.set(data.result.moviedetails);
+          $.each(movieDetails.attributes, function(label, value) {
+          $('#ModalMovieForm').append("<div class='form-group''><label for='frm" + label + "'>" + label + "</label><input name='frm" + label + "' class='form-control' type='text' data-type='" + (typeof value) +  "' value='" + ((typeof value === "object") ? String(value) : value) + "'></div>");
+      })
     });
   });
 
@@ -29,15 +29,24 @@ requirejs(["text!EditMovieModal.html"], function(html) {
       $('#ModalMovieForm').html("")
   });
 
-  function saveMovieChanges() {
+$("#btnSaveEditMovieModal").on("click", function () {
       //Create object from form
       var objFromForm = {};
-      //objFromForm.add("dateadded": "bla bla");
-      //Iterate through $("#ModalMovieForm")[0][i] for the legth of the array  Iterate through $("#ModalMovieForm")[0].length
-      // For each element create an object using key as $("#ModalMovieForm")[0][i].name and value $("#ModalMovieForm")[0][i].value
-      //Compare object created with objMovieDetailsModal and extract only value that have changed
-      //Update only value changed
-      alert ("Saving movies");
-  }
+      for (var i=0; i < $("#ModalMovieForm")[0].length; i++) {
+        if ($("#ModalMovieForm")[0][i].attributes["data-type"].value === "object") {
+          if ($("#ModalMovieForm")[0][i].value === "") {
+              objFromForm[$("#ModalMovieForm")[0][i].name.substring(3)] = [];
+          } else {
+              objFromForm[$("#ModalMovieForm")[0][i].name.substring(3)] = $("#ModalMovieForm")[0][i].value.split(",");
+          }
+      } else if ($("#ModalMovieForm")[0][i].attributes["data-type"].value === "number") {
+          objFromForm[$("#ModalMovieForm")[0][i].name.substring(3)] = parseFloat($("#ModalMovieForm")[0][i].value);
+      } else {
+          objFromForm[$("#ModalMovieForm")[0][i].name.substring(3)] = $("#ModalMovieForm")[0][i].value;
+        }
+      }
+      //Let Backbone model find & save changes.....
+      movieDetails.set(objFromForm);
+  });
 
 });
