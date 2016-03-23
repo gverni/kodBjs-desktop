@@ -69,7 +69,7 @@ requirejs.config({
    initialize: function() {
      console.log("MovieDetails initialize");
      this.on("change", function() {
-         console.log("Changed attributes" + this.changedAttributes().toString());
+         console.log("Changed attributes: " + JSON.stringify(this.changedAttributes()));
      });
    },
  });
