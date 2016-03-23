@@ -7,8 +7,10 @@
  <script src="vendor/underscore/underscore.js"></script>
  <script src="vendor/backbone/backbone.js"></script>
  <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+ <script src="vendor/requirejs/require.js"></script>
  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
  <link href="css/simple-sidebar/simple-sidebar.css" rel="stylesheet">
+
  <style type="text/css">
     body {
         padding: 50px 100px 50px 50px;
@@ -45,7 +47,8 @@
 </head>
 <body>
 
-<div class="include" include-HTML="EditMovieModal.html" post-script="EditMovieModal-script.js"></div>
+<!-- <div class="include" include-HTML="EditMovieModal.html" post-script="EditMovieModal-script.js"></div> -->
+<script src="EditMovieModal-script.js"></script>
 
 <div id="wrapper" class="blurred-background">
             <!-- Sidebar -->
@@ -103,8 +106,8 @@ function writeMovieList(movieListJSON) {
 }
 
 // Code to fecth JSON from server - Disabled for development / testing
-//    var serverKodi = "http://gverni3:8890/";
-    var serverKodi = "http://192.168.0.203/";
+    var serverKodi = "http://10.222.224.157:8890/";
+//    var serverKodi = "http://192.168.0.203/";
     var urlJsonRPC = "jsonrpc?request=";
     var stringJson = '{"jsonrpc": "2.0", "method": "VideoLibrary.GetMovies", "params": { "filter": {"field": "playcount", "operator": "is", "value": "0"}, "limits": { "start" : 0, "end": 25 }, "properties" : ["art", "rating", "thumbnail", "playcount", "file"], "sort": { "order": "ascending", "method": "label", "ignorearticle": true } }, "id": "libMovies"}';
 
@@ -123,45 +126,5 @@ function writeMovieList(movieListJSON) {
     });
 
 </script>
-<script>
-(function () {
-
-myHTMLInclude();
-
-function myHTMLInclude() {
-/*  var z, i, a, file, xhttp;
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    if (z[i].getAttribute("include-html")) {
-      a = z[i].cloneNode(false);
-      file = z[i].getAttribute("include-html");
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-          console.log("Including "+ a.getAttribute("include-html"));
-          a.removeAttribute("include-html");
-          a.innerHTML = xhttp.responseText;
-          z[i].parentNode.replaceChild(a, z[i]);
-          myHTMLInclude();
-      }      
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      return;
-    }
-  } */
-    
- var z, i, a, file, xhttp; 
- z = $(".include"); 
- for (i=0; i<z.length; i++) {
-    a = z[i].cloneNode(false); 
-    file = z[i].getSetAttribute("include-html"); 
-    $.load(); 
-    $.getScript();  
-     
- }
-    
-}
-})();    
-</script>
-
 </body>
 </html>
