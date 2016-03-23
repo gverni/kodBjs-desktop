@@ -1,5 +1,6 @@
-#Mac DS_Store
+#OSs temp files 
 .DS_Store
+Thumbs.db
 
 # Vendor modules 
 src/app/vendor
