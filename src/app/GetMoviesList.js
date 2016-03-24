@@ -19,7 +19,7 @@ function writeMovieList(movieListJSON) {
         };
     });
 
-    $("#loading").hide(); 
+    $("#loading").hide();
     document.getElementById('movielist').innerHTML = strHTML;
 
 }
@@ -35,8 +35,13 @@ function getMoviesList() {
 
       $("#loading").show();
 
+      console.log("Fetching movies list from " + urlKodi); 
+
       $.getJSON(urlKodi, jQuery.noop)
-      .error(function() { alert("Error reading JSON"); })
+      .error(function() {
+        alert("Error reading JSON");
+        $("#loading").hide();
+      })
       .success(function(data) {
          writeMovieList(data);
       });

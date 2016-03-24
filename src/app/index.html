@@ -73,19 +73,25 @@ requirejs.config({
  });
 
 //Start-up functions and declarations
- var movieDetails = new MovieDetails();
+var serverKodi;
+var movieDetails = new MovieDetails();
 
  function setNewKodiServer() {
-   var newKodiServerAddr = window.prompt("Specify kodi server address","");
+   var previousKodiServerAddr = localStorage.getItem('serverKodi');
+   var newKodiServerAddr = window.prompt("Specify kodi server address <addr>:<port>", previousKodiServerAddr === null ? "" : previousKodiServerAddr);
    //TODO: validation of the server trhough JSON RPC testing
-   localStorage.setItem('serverKodi', newKodiServerAddr);
+   if (newKodiServerAddr !== null) {
+     if (!newKodiServerAddr.startsWith("http://")) { newKodiServerAddr = "http://" + newKodiServerAddr};
+     localStorage.setItem('serverKodi', newKodiServerAddr + "/");
+     serverKodi = newKodiServerAddr + "/";
+   };
  }
 
- if (localStorage.getItem('serverKodi') === "") {
+ if (localStorage.getItem('serverKodi') === "" || localStorage.getItem('serverKodi') === null) {
      setNewKodiServer();
  }
 
- var serverKodi = localStorage.getItem('serverKodi');
+ serverKodi = localStorage.getItem('serverKodi');
  var urlJsonRPC = "jsonrpc?request=";
  var stringJsonGetMoviesList = '{"jsonrpc": "2.0", "method": "VideoLibrary.GetMovies", "params": { "filter": {"field": "playcount", "operator": "is", "value": "0"}, "limits": { "start" : 0, "end": 25 }, "properties" : ["art", "rating", "thumbnail", "playcount", "file"], "sort": { "order": "ascending", "method": "label", "ignorearticle": true } }, "id": "libMovies"}';
 
@@ -116,9 +122,10 @@ requirejs.config({
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
-        
-        <div id="loading" style="text-align: center; display: none""><img src="img/loading.gif"></div>
+
+
         <div id="page-content-wrapper">
+          <div id="loading" style="text-align: center; display: none""><img src="img/loading.gif"></div>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
