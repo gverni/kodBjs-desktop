@@ -62,10 +62,6 @@ requirejs.config({
   },
 });
 
-
-
-</script>
-<script>
  // Backbone integration
  var MovieDetails = Backbone.Model.extend({
    initialize: function() {
@@ -76,6 +72,7 @@ requirejs.config({
    },
  });
 
+//Start-up functions and declarations
  var movieDetails = new MovieDetails();
 
  function setNewKodiServer() {
@@ -83,6 +80,14 @@ requirejs.config({
    //TODO: validation of the server trhough JSON RPC testing
    localStorage.setItem('serverKodi', newKodiServerAddr);
  }
+
+ if (localStorage.getItem('serverKodi') === "") {
+     setNewKodiServer();
+ }
+
+ var serverKodi = localStorage.getItem('serverKodi');
+ var urlJsonRPC = "jsonrpc?request=";
+ var stringJsonGetMoviesList = '{"jsonrpc": "2.0", "method": "VideoLibrary.GetMovies", "params": { "filter": {"field": "playcount", "operator": "is", "value": "0"}, "limits": { "start" : 0, "end": 25 }, "properties" : ["art", "rating", "thumbnail", "playcount", "file"], "sort": { "order": "ascending", "method": "label", "ignorearticle": true } }, "id": "libMovies"}';
 
 
 </script>
@@ -99,7 +104,7 @@ requirejs.config({
                 </li>
                 <li class="sidebar-nav-divider"></li>
                 <li>
-                    <a href="#">Movies</a>
+                    <a href="#" onclick="getMoviesList()">Movies</a>
                 </li>
                 <li>
                     <a href="#">TvShow</a>
@@ -111,6 +116,8 @@ requirejs.config({
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
+        
+        <div id="loading" style="text-align: center; display: none""><img src="img/loading.gif"></div>
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
@@ -122,54 +129,6 @@ requirejs.config({
             </div>
     </div>
 </div>
-<script>
-
-function writeMovieList(movieListJSON) {
-
-    var i=1;
-    var strHTML="";
-    var thumbURI;
-    //strHTML = "Total movies:" + movieListJSON.result.limits.total + "<br/>";
-    var movieListDetails = movieListJSON.result.movies;
-    $.each(movieListDetails, function(idMovie, movieDetails) {
-        if (i == 1) {strHTML += '<div class="row">'};
-        strHTML += '<div class="col-sm-3 col-md-3">';
-        thumbURI = decodeURIComponent(movieDetails.thumbnail.substring(8,movieDetails.thumbnail.length-1));
-        if (!(thumbURI.startsWith("http"))) {thumbURI = serverKodi + "vfs/" + thumbURI};
-        strHTML += '<img class="poster" data-toggle="modal" data-target="#EditMovieModal" data-movieid="' + movieDetails.movieid + '" data-movietitle="' +  movieDetails.label + '" Title src="' + thumbURI + '" width="126px" height="180px"></div>'
-        i++;
-        if (i==5) {
-          strHTML += '</div>';
-          i = 1;
-        };
-    });
-
-    document.getElementById('movielist').innerHTML = strHTML;
-
-}
-
-    if (localStorage.getItem('serverKodi') === "") {
-        setNewKodiServer();
-    }
-
-    var serverKodi = localStorage.getItem('serverKodi');
-    var urlJsonRPC = "jsonrpc?request=";
-    var stringJsonGetMoviesList = '{"jsonrpc": "2.0", "method": "VideoLibrary.GetMovies", "params": { "filter": {"field": "playcount", "operator": "is", "value": "0"}, "limits": { "start" : 0, "end": 25 }, "properties" : ["art", "rating", "thumbnail", "playcount", "file"], "sort": { "order": "ascending", "method": "label", "ignorearticle": true } }, "id": "libMovies"}';
-
-// Settings for development
-/*  var serverKodi = "../../test_files/";
-    var urlJsonRPC = "";
-    var stringJson = "videolibrary.getmovies_resp.json";
-*/
-
-    var urlKodi = serverKodi + urlJsonRPC + stringJsonGetMoviesList;
-
-    $.getJSON(urlKodi, jQuery.noop)
-    .error(function() { alert("Error reading JSON"); })
-    .success(function(data) {
-       writeMovieList(data);
-    });
-
-</script>
+<script src="GetMoviesList.js"></script>
 </body>
 </html>
