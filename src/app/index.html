@@ -62,6 +62,8 @@ requirejs.config({
   },
 });
 
+
+
 </script>
 <script>
  // Backbone integration
@@ -75,6 +77,13 @@ requirejs.config({
  });
 
  var movieDetails = new MovieDetails();
+
+ function setNewKodiServer() {
+   var newKodiServerAddr = window.prompt("Specify kodi server address","");
+   //TODO: validation of the server trhough JSON RPC testing
+   localStorage.setItem('serverKodi', newKodiServerAddr);
+ }
+
 
 </script>
 <script type="text/javascript" src="EditMovieModal.js"></script>
@@ -97,7 +106,7 @@ requirejs.config({
                 </li>
                 <li class="sidebar-nav-divider"></li>
                 <li>
-                    <a href="#">Settings</a>
+                    <a href="#" onclick="setNewKodiServer()">Settings</a>
                 </li>
             </ul>
         </div>
@@ -139,9 +148,11 @@ function writeMovieList(movieListJSON) {
 
 }
 
-// Code to fecth JSON from server - Disabled for development / testing
-    var serverKodi = "http://10.222.224.157:8890/";
-//    var serverKodi = "http://192.168.0.203/";
+    if (localStorage.getItem('serverKodi') === "") {
+        setNewKodiServer();
+    }
+
+    var serverKodi = localStorage.getItem('serverKodi');
     var urlJsonRPC = "jsonrpc?request=";
     var stringJsonGetMoviesList = '{"jsonrpc": "2.0", "method": "VideoLibrary.GetMovies", "params": { "filter": {"field": "playcount", "operator": "is", "value": "0"}, "limits": { "start" : 0, "end": 25 }, "properties" : ["art", "rating", "thumbnail", "playcount", "file"], "sort": { "order": "ascending", "method": "label", "ignorearticle": true } }, "id": "libMovies"}';
 
