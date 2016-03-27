@@ -11,6 +11,7 @@
  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
  <link rel="stylesheet" href="css/simple-sidebar/simple-sidebar.css" >
  <style type="text/css">
+
     body {
         padding: 50px 100px 50px 50px;
         background-image: url("img/background_green.jpg");
@@ -23,6 +24,12 @@
     -o-filter: blur(4px);
     -ms-filter: blur(4px);
     filter: blur(4px);
+    }
+
+    /* Used to keep header and footer for the modal always visible */
+    .modal-body {
+      height: 400px; /* TODO: use a calculated value based on the height of the screen */  
+      overflow-y: scroll;
     }
 
     .sidebar-nav-divider {
