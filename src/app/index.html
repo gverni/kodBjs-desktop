@@ -28,7 +28,7 @@
 
     /* Used to keep header and footer for the modal always visible */
     .modal-body {
-      height: 400px; /* TODO: use a calculated value based on the height of the screen */  
+      height: 400px; /* TODO: use a calculated value based on the height of the screen */
       overflow-y: scroll;
     }
 
@@ -61,6 +61,17 @@
 
  </style>
 <script>
+// Logger
+function logger(level, message) {
+/* Levels
+0 - Fatal (cause program to stop)
+1 - Error
+2 - Info
+3 - Debug
+*/
+  console.log(message);
+
+}
 
 //Configuration for requireJS. Should we move it to another file.. shall we?
 requirejs.config({
@@ -72,9 +83,8 @@ requirejs.config({
  // Backbone integration
  var MovieDetails = Backbone.Model.extend({
    initialize: function() {
-     console.log("MovieDetails initialize");
      this.on("change", function() {
-         console.log("Changed attributes: " + JSON.stringify(this.changedAttributes()));
+         logger(3, "MovieDetails: Changed attributes: " + JSON.stringify(this.changedAttributes()));
      });
    },
  });

@@ -35,7 +35,7 @@ function getMoviesList() {
 
       $("#loading").show();
 
-      console.log("Fetching movies list from " + urlKodi); 
+      logger(3, "GetMovieList: Fetching movies list from " + urlKodi);
 
       $.getJSON(urlKodi, jQuery.noop)
       .error(function() {
