@@ -38,11 +38,12 @@ function getMoviesList() {
       logger(3, "GetMovieList: Fetching movies list from " + urlKodi);
 
       $.getJSON(urlKodi, jQuery.noop)
-      .error(function() {
+      .fail(function() {
+        logger(1, "GetMovieList: Error fetching movies list");
         alert("Error reading JSON");
         $("#loading").hide();
       })
-      .success(function(data) {
+      .done(function(data) {
          writeMovieList(data);
       });
 

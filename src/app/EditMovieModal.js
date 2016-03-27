@@ -13,11 +13,11 @@ requirejs(["text!EditMovieModal.html"], function(html) {
     var movieId = trigger.data('movieid');
     var jsonGetMovieDetail = `{"jsonrpc": "2.0", "method": "VideoLibrary.GetMovieDetails", "params": { "movieid": ${movieId} ,  "properties": ["title", "genre", "year", "rating", "director", "trailer", "tagline", "originaltitle", "lastplayed", "playcount", "writer", "studio", "mpaa", "country", "imdbnumber", "runtime", "set", "showlink", "top250", "votes", "thumbnail", "file", "sorttitle", "setid", "dateadded", "tag"] }, "id": "MovieDetail"}`;
     $.getJSON(serverKodi + urlJsonRPC + jsonGetMovieDetail, jQuery.noop)
-    .error(function() {
-      logger(1, "EditMovideModal: Error fetching movie details"); 
+    .fail(function() {
+      logger(1, "EditMovideModal: Error fetching movie details");
       alert("Error reading JSON");
     })
-    .success(function(data) {
+    .done(function(data) {
       $('.modal-title').text('Title: ' + movieTitle);
       movieDetails.set(data.result.moviedetails);
           $.each(movieDetails.attributes, function(label, value) {
