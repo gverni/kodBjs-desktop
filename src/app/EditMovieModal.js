@@ -24,7 +24,7 @@ requirejs(["text!EditMovieModal.html"], function(html) {
           var strHTML = '<label for="frm' + label + '">' + label + '</label><div class="form-group"><input name="frm' + label + '" class="form-control" type="text" data-type="' + (typeof value) +  '" value="' + ((typeof value === "object") ? String(value) : value) + '"';
           if (label === "rating") {
             //Rewriting the whole group as input-group instead of form-group to have the refresh icon attached to the input box (Using form-group the refresh icon appear underneath)
-            strHTML = '<label for="frm' + label + '">' + label + '</label><div class="input-group"><input name="frm' + label + '" class="form-control" type="text" data-type="' + (typeof value) +  '" value="' + ((typeof value === "object") ? String(value) : value) + '"  disabled/><span class="input-group-addon" onclick="alert(click);"><i class="glyphicon glyphicon-refresh"></i></span';
+            strHTML = '<label for="frm' + label + '">' + label + '</label><div class="input-group"><input name="frm' + label + '" class="form-control" type="text" data-type="' + (typeof value) +  '" value="' + ((typeof value === "object") ? String(value) : value) + '"  disabled/><span class="input-group-addon" onclick="refreshRating(\'' + movieDetails.attributes["imdbnumber"] + '\');"><i class="glyphicon glyphicon-refresh"></i></span';
           }
           strHTML += "></div>";
           $('#ModalMovieForm').append(strHTML);
@@ -58,3 +58,9 @@ $("#btnSaveEditMovieModal").on("click", function () {
   });
 
 });
+
+function refreshRating(imdbid) {
+
+  alert("IMDB ID:" +  imdbid);
+
+}
