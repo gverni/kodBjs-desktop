@@ -19,7 +19,7 @@ requirejs(["text!EditMovieModal.html"], function(html) {
     })
     .done(function(data) {
       $('.modal-title').text('Title: ' + movieTitle);
-      movieDetails.set(data.result.moviedetails);
+      movieDetails.set(data.result.moviedetails, {silent: true});
           $.each(movieDetails.attributes, function(label, value) {
           var strHTML = '<label for="frm' + label + '">' + label + '</label><div class="form-group"><input name="frm' + label + '" class="form-control" type="text" data-type="' + (typeof value) +  '" value="' + ((typeof value === "object") ? String(value) : value) + '"';
           if (label === "rating") {
