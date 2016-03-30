@@ -1,10 +1,10 @@
 Examples
 {
-    "jsonrpc": "2.0", 
-    "method": "VideoLibrary.SetMovieDetails", 
-    "params": { 
-        "movieid": , 
-        "director": []"Giuseppe Verni" ]
+    "jsonrpc": "2.0",
+    "method": "VideoLibrary.SetMovieDetails",
+    "params": {
+        "movieid": ,
+        "director": ["Giuseppe Verni"]
     },
     "id": "libMovies"
 }
@@ -12,7 +12,12 @@ Examples
 
 Example
 
-
-{"jsonrpc": "2.0",     "method": "VideoLibrary.SetMovieDetails",     "params": { "movieid": 317, "director": {["",Giuseppe Verni"} },"id": "libMovies"}
-
 {"jsonrpc": "2.0", "method": "VideoLibrary.SetMovieDetails", "params": { "movieid": 317, "director":["Giuseppe Verni"]},"id": "libMovies"}
+
+Response
+
+Succes
+
+Error:
+
+{"error":{"code":-32700,"message":"Parse error."},"id":null,"jsonrpc":"2.0"}

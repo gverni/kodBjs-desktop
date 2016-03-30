@@ -11,7 +11,8 @@ requirejs(["text!EditMovieModal.html"], function(html) {
     var trigger = $(event.relatedTarget);
     var movieTitle = trigger.data('movietitle');
     var movieId = trigger.data('movieid');
-    var jsonGetMovieDetail = `{"jsonrpc": "2.0", "method": "VideoLibrary.GetMovieDetails", "params": { "movieid": ${movieId} ,  "properties": ["title", "genre", "year", "rating", "director", "trailer", "tagline", "originaltitle", "lastplayed", "playcount", "writer", "studio", "mpaa", "country", "imdbnumber", "runtime", "set", "showlink", "top250", "votes", "thumbnail", "file", "sorttitle", "setid", "dateadded", "tag"] }, "id": "MovieDetail"}`;
+    var jsonGetMovieDetail = '{"jsonrpc": "2.0", "method": "VideoLibrary.GetMovieDetails", "params": { "movieid": ' + movieId + '  ,  "properties": ["title", "genre", "year", "rating", "director", "trailer", "tagline", "originaltitle", "lastplayed", "playcount", "writer", "studio", "mpaa", "country", "imdbnumber", "runtime", "set", "showlink", "top250", "votes", "thumbnail", "file", "sorttitle", "dateadded", "tag"] }, "id": "MovieDetail"}';
+    logger(3, "EditMovideModal: requesting movie details: " + jsonGetMovieDetail);
     $.getJSON(serverKodi + urlJsonRPC + jsonGetMovieDetail, jQuery.noop)
     .fail(function() {
       logger(1, "EditMovideModal: Error fetching movie details");
@@ -21,13 +22,27 @@ requirejs(["text!EditMovieModal.html"], function(html) {
       $('.modal-title').text('Title: ' + movieTitle);
       movieDetails.set(data.result.moviedetails, {silent: true});
           $.each(movieDetails.attributes, function(label, value) {
-          var strHTML = '<label for="frm' + label + '">' + label + '</label><div class="form-group"><input name="frm' + label + '" class="form-control" type="text" data-type="' + (typeof value) +  '" value="' + ((typeof value === "object") ? String(value) : value) + '"';
-          if (label === "rating") {
-            //Rewriting the whole group as input-group instead of form-group to have the refresh icon attached to the input box (Using form-group the refresh icon appear underneath)
-            strHTML = '<label for="frm' + label + '">' + label + '</label><div class="input-group"><input name="frm' + label + '" class="form-control" type="text" data-type="' + (typeof value) +  '" value="' + ((typeof value === "object") ? String(value) : value) + '"  disabled/><span class="input-group-addon" onclick="refreshRating(\'' + movieDetails.attributes["imdbnumber"] + '\');"><i class="glyphicon glyphicon-refresh"></i></span';
-          }
-          strHTML += "></div>";
-          $('#ModalMovieForm').append(strHTML);
+              var strHTML;
+              switch (label) {
+                case "movieid":
+                case "thumbnail":
+                  //Here the items we don;t want to show
+                  break;
+                case "file":
+                case "lastplayed":
+                case "trailer":
+                case "set":
+                  //Here the item we want to protect
+                  strHTML = '<label for="frm' + label + '">' + label + '</label><div class="form-group"><input name="frm' + label + '" class="form-control" type="text" data-type="' + (typeof value) +  '" value="' + ((typeof value === "object") ? String(value) : value) + '"  disabled/>';
+                  break;
+                case "rating":
+                  //Rewriting the whole group as input-group instead of form-group to have the refresh icon attached to the input box (Using form-group the refresh icon appear underneath)
+                  strHTML = '<label for="frm' + label + '">' + label + '</label><div class="input-group"><input name="frm' + label + '" class="form-control" type="text" data-type="' + (typeof value) +  '" value="' + ((typeof value === "object") ? String(value) : value) + '"  disabled/><span class="input-group-addon" onclick="refreshRating(\'' + movieDetails.attributes["imdbnumber"] + '\');"><i class="glyphicon glyphicon-refresh"></i></span></div>';
+                  break;
+                default:
+                  strHTML = '<label for="frm' + label + '">' + label + '</label><div class="form-group"><input name="frm' + label + '" class="form-control" type="text" data-type="' + (typeof value) +  '" value="' + ((typeof value === "object") ? String(value) : value) + '"></div>';
+              }
+              $('#ModalMovieForm').append(strHTML);
       })
     });
   });
@@ -55,6 +70,9 @@ $("#btnSaveEditMovieModal").on("click", function () {
       }
       //Let Backbone model find & save changes.....
       movieDetails.set(objFromForm);
+      //Close the modal
+      $('#EditMovieModal').modal('hide');
+
   });
 
 });
