@@ -79,6 +79,13 @@ $("#btnSaveEditMovieModal").on("click", function () {
 
 function refreshRating(imdbid) {
 
-  alert("IMDB ID:" +  imdbid);
+  $.getJSON("http://www.omdbapi.com/?i=" + imdbid, jQuery.noop)
+  .fail(function() {
+    logger(1, "Error fetching info from IMDB");
+  })
+  .done(function(data) {
+      $("#ModalMovieForm")[0]["frmrating"].value = data["imdbRating"];
+      alert("Rating updated but not saved. Click save to save it!")
+  });
 
 }
