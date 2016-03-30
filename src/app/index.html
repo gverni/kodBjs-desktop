@@ -13,7 +13,7 @@
  <style type="text/css">
 
     body {
-        padding: 50px 100px 50px 50px;
+        padding: 0px 100px 50px 50px;
         background-image: url("img/background_green.jpg");
         background-attachment: fixed;
     }
@@ -112,7 +112,6 @@ var movieDetails = new MovieDetails();
 <script type="text/javascript" src="EditMovieModal.js"></script>
 </head>
 <body>
-
 <div id="wrapper" class="blurred-background">
             <!-- Sidebar -->
         <div id="sidebar-wrapper">
@@ -134,9 +133,12 @@ var movieDetails = new MovieDetails();
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
-
-
         <div id="page-content-wrapper">
+          <div class="btn-group" role="group" aria-label="...">
+          <button type="button" class="btn btn-default">Left</button>
+          <button type="button" class="btn btn-default">Middle</button>
+          <button type="button" class="btn btn-default">Right</button>
+          </div>
           <div id="loading" style="text-align: center; display: none""><img src="img/loading.gif"></div>
             <div class="container-fluid">
                 <div class="row">
