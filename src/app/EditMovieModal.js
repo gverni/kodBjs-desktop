@@ -20,6 +20,7 @@ requirejs(["text!EditMovieModal.html"], function(html) {
     })
     .done(function(data) {
       $('.modal-title').text('Title: ' + movieTitle);
+      data.result.moviedetails["rating"] = parseFloat((data.result.moviedetails["rating"]).toFixed(1)); 
       movieDetails.set(data.result.moviedetails, {silent: true});
           $.each(movieDetails.attributes, function(label, value) {
               var strHTML;
